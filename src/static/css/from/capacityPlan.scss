@@ -1,0 +1,140 @@
+/*计划方案*/
+
+.capacity-detail {
+    // display: none !important;
+    height: 160px;
+    padding: 20px 20px;
+    background: url(../../img/demodImg/capacity_bg.jpg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .wireframe {
+        height: 70%;
+        width: 15px;
+        border: 1px solid #DDDDDD;
+        border-right: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .circle {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: #fefefe;
+            position: absolute;
+            left: -15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: blue;
+        }
+    }
+    .level-or-enter-time {
+        height: 100%;
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        justify-content: space-between;
+        >div {
+            height: 50px;
+            padding: 0 8px;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            >span {
+                &:first-child {
+                    color: #eee;
+                    font-size: 10px;
+                    letter-spacing: 1px;
+                }
+                &:last-child {
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .quoted {
+        height: 100%;
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        >div {
+            color: #eee;
+            height: 50px;
+            >span {
+                color: inherit;
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+            >div {
+                display: flex;
+                flex-direction: row;
+                color: inherit;
+                >span {
+                    margin-right: 10px;
+                    >span {
+                        padding: 0 3px;
+                        font-size: 1.5rem;
+                        color: #ffbe54;
+                    }
+                }
+            }
+        }
+    }
+    .schedule {
+        flex: 1;
+        height: 100%;
+        >div {
+            display: flex;
+            flex-direction: column;
+            color: #eee;
+            height: 50px;
+        }
+    }
+    .quoted-schedule {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .qs-item {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            >div {
+                color: #eee;
+                height: 50px;
+                display: flex;
+				flex-direction: column;
+				
+                >span {
+					flex: 1;
+                    color: #eee;
+                    font-size: 10px;
+                    letter-spacing: 1px;
+                }
+                >div {
+					flex:1;
+                    display: flex;
+                    flex-direction: row;
+                    color: inherit;
+                    >span {
+                        margin-right: 10px;
+                        >span {
+                            padding: 0 3px;
+                            font-size: 1.5rem;
+                            color: #ffbe54;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

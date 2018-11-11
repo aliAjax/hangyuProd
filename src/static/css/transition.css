@@ -1,0 +1,597 @@
+/* 过度动画文件 */
+
+
+.container {
+    max-width: 24rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+
+.formDetails-enter {
+    opacity: 0.01;
+    top: -100%;
+}
+.formDetails-enter-done{
+    top:65px;
+}
+
+.formDetails-enter-active {
+    top: 65px;
+    opacity: 1;
+    transition: opacity 500ms ease-in,top 500ms ease-out;
+}
+.formDetails-exit {
+    top: 65px;
+    opacity: 1;
+}
+@media screen and (max-width: 1366px) {
+    .formDetails-enter-done{
+        top:50px;
+    }
+
+    .formDetails-enter-active {
+        top: 50px;
+        opacity: 1;
+        transition: opacity 500ms ease-in,top 500ms ease-out;
+    }
+    .formDetails-exit {
+        top: 50px;
+        opacity: 1;
+    }
+}
+.formDetails-exit-active {
+    opacity: 0.01;
+    top: -100%;
+    transition:opacity 500ms ease-in,top 500ms ease-out;
+}
+.confirmations-enter{
+    opacity: 0;
+}
+.confirmations-enter-active{
+    opacity: 1;
+    transition: all 0.4s;
+}
+.confirmations-exit-active {
+    opacity: 0;
+    transition:all 0.4s;
+}
+
+
+.nav-bar-tool-active{
+    height: auto !important;
+    transition: height 1000ms ease-in;
+}
+
+/*下拉列表*/
+.dropDown-enter {
+    opacity: 0.01;
+    top: 0px;
+}
+.dropDown-enter-done{
+    top:36px;
+}
+.dropDown-enter-active {
+    top:36px;
+    opacity: 1;
+    transition: opacity 200ms ease-in,top 200ms ease-out;
+}
+.dropDown-exit {
+    top: 36px;
+    opacity: 1;
+}
+.dropDown-exit-active {
+    opacity: 0.01;
+    top: 0px;
+    transition:opacity 200ms ease-in,top 200ms ease-out;
+}
+
+/*滚动信息*/
+.rolling-enter {
+    transform: translateX(10px);
+    opacity: 0.01;
+}
+.rolling-enter-done{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.rolling-enter-active {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+.rolling-exit {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.rolling-exit-active {
+    transform: translateX(-10px);
+    opacity: 0.01;
+    transition: all 500ms ease-in;
+}
+
+/*首页动画*/
+
+/*地球缩放动画-start*/
+@keyframes earthScale {
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(1.1,1.1);
+    }
+}
+
+.earth-scale{
+    animation: earthScale 20s infinite alternate;
+}
+/*散点旋转动画*/
+
+@keyframes scatterRotate {
+    from{
+        transform:rotateZ(0deg) ;
+    }
+    to{
+        transform:rotateZ(360deg) ;
+    }
+}
+
+.scatter-rotate{
+    animation: scatterRotate 120s infinite alternate;
+}
+
+/*散点线旋转*/
+
+@keyframes scatterLineRotate {
+    0%{
+        transform: scale(.65,.65) translate(-90px, -46px);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(.85,.85) translate(-90px, -46px);
+        opacity: .8;
+    }
+    100%{
+        transform: scale(.95,.95) translate(-90px, -46px);
+        opacity: 0;
+    }
+}
+.scatter-line-rotate{
+    animation: scatterLineRotate 10s infinite alternate;
+}
+
+/*云层变化*/
+@keyframes yunScale {
+    0%{
+        transform: scale(1,1) translate(-250px,-35px) skew(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2,1.2) translate(-180px,-10px) skew(20deg);
+        opacity: 1;
+    }
+}
+.yun-scale{
+    animation: yunScale 20s infinite alternate;
+}
+/*地球缩放动画-end*/
+
+/*屏展示例-start*/
+.banner-i1-enter {
+    transform: translate(0,100px);
+    opacity: 0.01;
+}
+.banner-i1-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i1-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-i1-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i1-exit-active {
+    transform: translate(0,100px);
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1)
+}
+
+.fadess-enter {
+    opacity: 0.01;
+}
+.fadess-enter-active {
+    opacity: 1;
+    transition: opacity 5000ms ease-in;
+}
+.fadess-exit {
+    opacity: 1;
+}
+.fadess-exit-active {
+    opacity: 0.01;
+    transition: opacity 5000ms ease-in;
+}
+
+
+/*屏展示例-end*/
+
+
+
+/*滚动信息*/
+.banner-i2-enter {
+    transform: translate(0,100px);
+    opacity: 0.01;
+}
+.banner-i2-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i2-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-i2-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i2-exit-active {
+    transform: translate(0,100px);
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+
+
+
+
+
+.banner-i3-enter {
+    transform: translate(-100px,0);
+    opacity: 0.01;
+}
+.banner-i3-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i3-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-i3-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i3-exit-active {
+    transform: translate(-100px,0);
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+/*@keyframes diqiu2 {*/
+    /*0%{*/
+        /*left: -50%;*/
+        /*top: 100%;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*100%{*/
+        /*left: -10%;*/
+        /*top: 68%;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+/*.banner-i3{*/
+    /*animation: diqiu2 1s ease-in 1 normal;*/
+    /*left: -10% !important;*/
+    /*top: 68% !important;*/
+/*}*/
+
+
+
+.banner-i4-enter {
+    transform: translate(-100px,-100px);
+    opacity: 0.01;
+}
+.banner-i4-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i4-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-i4-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i4-exit-active {
+    transform: translate(-100px,-100px);
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+/*@keyframes diqiu3 {*/
+    /*0%{*/
+        /*left: -50%;*/
+        /*top: -50%;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*100%{*/
+        /*left: -24%;*/
+        /*top: -47%;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+/*.banner-i4{*/
+    /*animation: diqiu3 1s ease-in 1 normal;*/
+    /*left: -24% !important;*/
+    /*top: -47% !important;*/
+/*}*/
+
+
+
+.banner-i5-enter {
+    transform: translate(0,100px);
+    opacity: 0.01;
+}
+.banner-i5-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i5-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 1000ms cubic-bezier(.075, .82, .165, 1);
+}
+.banner-i5-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-i5-exit-active {
+    transform: translate(0,100px);
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.075, .82, .165, 1);
+}
+
+.banner-b04-enter {
+    transform: translate(0,-100px);
+    opacity: 0.01;
+}
+.banner-b04-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b04-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+.banner-b04-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b04-exit-active {
+    transform: translate(0,-100px);
+    opacity: 0.01;
+    transition: all 500ms ease-in;
+}
+
+
+.banner-b05-enter {
+    transform: translate(100px,0);
+    opacity: 0.01;
+}
+.banner-b05-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b05-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+.banner-b05-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b05-exit-active {
+    transform: translate(100px,0);
+    opacity: 0.01;
+    transition: all 500ms ease-in;
+}
+/*@keyframes dierpin2 {*/
+    /*0%{*/
+        /*left: 100%;*/
+        /*top: 1100%;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*100%{*/
+        /*left: 1650px;*/
+        /*top: 16%;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+/*.banner-b05{*/
+    /*animation: dierpin2 1s ease-in 1 normal;*/
+    /*left: 1650px !important;*/
+    /*top: 16% !important;*/
+/*}*/
+
+
+.banner-b06-enter {
+    transform: translate(0,100px);
+    opacity: 0.01;
+}
+.banner-b06-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b06-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+.banner-b06-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b06-exit-active {
+    transform: translate(0,100px);
+    opacity: 0.01;
+    transition: all 500ms ease-in;
+}
+/*@keyframes dierpin3 {*/
+    /*0%{*/
+        /*left: 100%;*/
+        /*top: 100%;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*100%{*/
+        /*left: 960px;*/
+        /*top: 62%;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+/*.banner-b06{*/
+    /*animation: dierpin3 1s ease-in 1 normal;*/
+    /*left: 960px !important;*/
+    /*top: 62% !important;*/
+/*}*/
+
+
+
+/*.banner-c11-enter {*/
+    /*top: 0%;*/
+    /*left: 0%;*/
+    /*opacity: 0.01;*/
+/*}*/
+/*.banner-c11-enter-done{*/
+    /*left: 296px;*/
+    /*top: 17%;*/
+    /*opacity: 1;*/
+/*}*/
+/*.banner-c11-enter-active {*/
+    /*left: 296px;*/
+    /*top: 17%;*/
+    /*opacity: 1;*/
+    /*transition: all 500ms ease-in;*/
+/*}*/
+/*.banner-c11-exit {*/
+    /*left: 296px;*/
+    /*top: 17%;*/
+    /*opacity: 1;*/
+/*}*/
+/*.banner-c11-exit-active {*/
+    /*top: 0%;*/
+    /*left: 0%;*/
+    /*opacity: 0.01;*/
+    /*transition: all 500ms ease-in;*/
+/*}*/
+
+/*test     transform: translate();
+*/
+
+.banner-c11-enter {
+    opacity: 0.01;
+}
+.banner-c11-enter-done{
+    opacity: 1;
+}
+.banner-c11-enter-active {
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-c11-exit {
+    opacity: 1;
+}
+.banner-c11-exit-active {
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+
+
+.banner-b1-enter {
+    opacity: 0.01;
+}
+.banner-b1-enter-done{
+    transform: translate(0,0);
+}
+.banner-b1-enter-active {
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-b1-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-b1-exit-active {
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+
+.banner-d11-enter {
+    transform: translate(0,500px);
+    opacity: 0.01;
+}
+.banner-d11-enter-done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-d11-enter-active {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-d11-exit {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.banner-d11-exit-active {
+    transform: translate(0,500px);
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+
+.banner-e11-enter {
+    opacity: 0.01;
+}
+.banner-e11-enter-done{
+    opacity: 1;
+}
+.banner-e11-enter-active {
+    opacity: 1;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+.banner-e11-exit {
+    opacity: 1;
+}
+.banner-e11-exit-active {
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
+
+.banner-a4-enter {
+    opacity: 0.01;
+}
+.banner-a4-enter-done{
+    opacity: 1;
+}
+.banner-a4-enter-active {
+    opacity: 1;
+    transition: all 1000ms linear;
+}
+.banner-a4-exit {
+    opacity: 1;
+}
+.banner-a4-exit-active {
+    opacity: 0.01;
+    transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}

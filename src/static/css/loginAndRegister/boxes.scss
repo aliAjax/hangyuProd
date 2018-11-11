@@ -1,0 +1,41 @@
+.loginZc{
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 10;
+  font-size: 1.4rem;
+  >span{
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+    color: #3e38ff;
+    &:hover{
+      color: #2722ff;
+    }
+  }
+}
+.box {
+  position: fixed;
+  top:17%;
+  right: 14%;
+  z-index: 10;
+  background-color: white;
+}
+.login-close{
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 20px;
+  box-shadow: 0 3px 6px #f4f7ff;
+  position: relative;
+  z-index: 1;
+  >div{
+    font-family: iconfont;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+  }
+}

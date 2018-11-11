@@ -1,0 +1,473 @@
+.box{
+  background-color: #f8f8f8;
+  font-family:FZLTXHK--GBK1-0;
+  max-height: 886px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1.2rem;
+}
+.showMoneyTitle{
+  width: 118px;
+  margin-left: 14px;
+  color: #605e7c;
+  padding-top: 41px;
+  font-family: NotoSansHans-DemiLight;
+}
+.moneyNum{
+  font-size: 2.2rem;
+  color: #605e7c;
+  margin-top: 17px;
+  margin-left: 14px;
+  font-family: NotoSansHans-Bold;
+}
+/*显示栏导航模块*/
+.status-title{
+  display: flex;
+  margin-top: 62px;
+  color:#605e7c ;
+  margin-bottom: 29px;
+}
+a{
+  text-decoration: none;
+  color: #605E7C;
+}
+.billTime{
+  padding-left: 36px;
+}
+.demandType{
+  width: 82px;
+  margin-left: 52px;
+  >a{
+    color: #605e7c;
+    :hover{
+      color: #605e7c;
+    }
+  }
+}
+
+
+.issueTitle{
+  width: 82px;
+  margin-left: 73px;
+}
+
+.allState>a{
+  color: #605e7c;
+  :hover{
+    color: #605E7C;
+  }
+}
+
+.shouldDo{
+  width: 82px;
+  margin-left: 117px;
+  margin-right: 69px;
+}
+.pagination{
+  padding-bottom: 6px;
+  >div{
+    width: 100%;
+  }
+}
+.itemScroll{
+
+}
+/*详情模块*/
+.detailBox{
+  width: 600px;
+  height: 884px;
+  background: #ffffff;
+  position: fixed;
+  top: 66px;
+  right: 0px;
+  color: #605e7c;
+  z-index: 222;
+  .navRight{
+    display: flex;
+    margin-right: 20px;
+  }
+  .detailNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.09);
+    .detailNavName{
+      margin-left: 44px;
+    }
+    .print{
+      width: 70px;
+      height: 24px;
+      margin-left: 325px;
+      position:relative;
+      padding-left:28px;
+      :nth-child(1){
+        font-size: 2rem;
+        position: absolute;
+        left: 8px;
+        top: -3px;
+      }
+    }
+    .downLoad{
+      width: 70px;
+      height: 24px;
+      margin-left: 14px;
+      position:relative;
+      padding-left:28px;
+      :nth-child(1){
+        font-size: 2rem;
+        position: absolute;
+        left: 8px;
+        top: -3px;
+      }
+    }
+    .detailNavBtn{
+      width: 22px;
+      height: 22px;
+      border: solid 1px #ededed;
+      border-radius: 12px;
+      margin-left: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .close-icon {
+        color: #3c77ff;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        border: 1px solid #ededed;
+        border-radius: 100%;
+        cursor: pointer;
+        &:hover {
+          background: #3c78ff;
+          color: white;
+        }
+      }
+    }
+  }
+  .detailTitle{
+    width: 243px;
+    height: 76px;
+    font-size: 2.7rem;
+    margin-top: 35px;
+    margin-left: 174px;
+  }
+  .owner{
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    margin-left: 52px;
+  }
+  .span{
+    text-decoration: underline;
+  }
+  .table{
+    width: 569px;
+    height: 127px;
+    border: solid 1px #969696;
+    margin-left: 14px;
+    margin-bottom: 52px;
+  }
+  .signature{
+    display: flex;
+    justify-content: space-around;
+    .signatureName{
+      margin-bottom: 12px;
+    }
+  }
+}
+.noShow{
+  display: none;
+}
+.pagin{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+.noPagin{
+  color: #939298;
+  display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+  margin-top: 100px;
+}
+
+.tableDirect{
+  width: 569px;
+  border: solid 1px #969696;
+  margin-left: 14px;
+  margin-bottom: 52px;
+  .tableTop{
+    height: 46px;
+    display: flex;
+    >div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      border-bottom: solid 1px #969696;
+    }
+    .airType{
+      width: 93px;
+      border-right: solid 1px #969696;
+    }
+    .days{
+      width: 55px;
+    }
+    .tableItem{
+      width: 60px;
+      border-left: solid 1px #969696;
+    }
+  }
+  .tableBottom{
+    height: 76px;
+    display: flex;
+    .underLine{
+      border-top: solid 1px #969696;
+    }
+    >div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        width: 100%;
+      }
+    }
+    .airType{
+      width: 93px;
+      border-right: solid 1px #969696;
+    }
+    .days{
+      width: 55px;
+    }
+    .tableDetail{
+      width: 60px;
+      border-left: solid 1px #969696;
+    }
+  }
+}
+.tableIndirect{
+  width: 569px;
+  border: solid 1px #969696;
+  margin-left: 14px;
+  margin-bottom: 52px;
+  .tableTop{
+    height: 46px;
+    display: flex;
+    >div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      border-bottom: solid 1px #969696;
+    }
+    .airType{
+      width: 93px;
+      border-right: solid 1px #969696;
+    }
+    .days{
+      width: 55px;
+    }
+    .tableItem{
+      width: 105px;
+      border-left: solid 1px #969696;
+    }
+  }
+  .tableBottom{
+    height: 76px;
+    display: flex;
+    .underLine{
+      border-top: solid 1px #969696;
+    }
+    >div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        width: 100%;
+      }
+    }
+    .airType{
+      width: 93px;
+      border-right: solid 1px #969696;
+    }
+    .days{
+      width: 55px;
+    }
+    .tableDetail{
+      width: 105px;
+      border-left: solid 1px #969696;
+    }
+  }
+}
+
+.showMoneyBox{
+  display: flex;
+}
+.financing{
+  display: flex;
+  height: 30px;
+  margin-top: 41px;
+  margin-left: 31px;
+  border-radius: 100px;
+}
+
+.checkBox{
+  display: flex;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 1920px;
+  height: 935px;
+}
+.financingBox{
+  box-shadow: 0px 2px 15px 0px
+  rgba(0, 0, 0, 0.04);
+  background: white;
+  width: 700px;
+  height: 600px;
+  margin-top: 221px;
+  margin-left: 610px;
+  .rectangle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    line-height: 42px;
+    width: inherit;
+    height: 42px;
+    padding-left: 30px;
+    padding-right: 9px;
+    box-shadow: 0px 2px 15px 0px
+    rgba(0, 0, 0, 0.1);
+    .closeBtn{
+      cursor: pointer;
+      font-size: 2rem;
+      color: #4077fc;
+    }
+  }
+  .checkCtn{
+    display: flex;
+    justify-content: center;
+    height: 74px;
+    width: inherit;
+    .checkCtnBox{
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      width: 680px;
+      border-bottom: solid 2px #F3F3F3;
+      .checkDiv{
+        padding-left: 25px;
+        padding-right: 35px;
+      }
+      .checkSpan1{
+        width: 165px;
+      }
+      .checkSpan2{
+        width: 151px;
+      }
+      .checkSpan3{
+        cursor: pointer;
+        font-family: FZLTZHK--GBK1-0;
+        font-size: 1.2rem;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+      }
+    }
+  }
+  .checkList{
+    width: inherit;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    >div>div{
+      border-bottom: solid 2px #F3F3F3;
+      height: 50px;
+      display: flex;
+      width: 680px;
+      align-items: center;
+      margin: auto;
+      .checkDiv{
+        padding-left: 29px;
+        padding-right: 80px;
+      }
+      .checkSpan1{
+        width: 165px;
+      }
+      .checkSpan2{
+        width: 151px;
+      }
+      .checkSpan3{
+        cursor: pointer;
+        font-family: FZLTZHK--GBK1-0;
+        text-decoration: underline;
+        font-size: 1.2rem;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #5086ff;
+      }
+    }
+  }
+  .checkBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 82px;
+  }
+}
+.checkTitle{
+  font-family: NotoSansHans-Medium;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #605e7c;
+}
+
+.test{
+  width: 130px;
+  >div>div:nth-child(1){
+    width: 100%;
+    max-width: none;
+    padding: 7px 22px 7px 22px;
+    >a{
+      top:11px;
+    }
+  };
+  >div>div:nth-child(2)>div{
+    width: 50%;
+    >ul>li{
+      padding-left: 22px;
+    }
+  }
+}
+
+/*适配1366*/
+@media screen and (max-width: 1366px) {
+  .checkBox{
+    width: 100%;
+    height: 100%;
+    .financingBox{
+      margin-top: 50px;
+      margin-left: 283px;
+      height: 578px;
+    }
+  }
+  .checkBtn{
+    height: 65px !important;
+  }
+}
+

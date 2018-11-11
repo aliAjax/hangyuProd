@@ -1,0 +1,284 @@
+.hidden{
+  display: none;
+}
+.showDetail{
+  display: flex;
+  background: transparent;
+  margin-left: 23px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.table{
+  width: 882px;
+  border-collapse: collapse;
+}
+.trFile>a{
+  text-decoration: underline;
+  color:#5086ff ;
+}
+
+.table>thead>tr{
+  >th{
+    font-weight: normal;
+    color: #605e7c;
+  }
+  :nth-child(1){
+    width: 87px;
+  }
+  :nth-child(2){
+    width: 121px;
+  }
+  :nth-child(3){
+    width: 126px;
+  }
+  :nth-child(4){
+    width: 123px;
+  }
+  :nth-child(5){
+    width: 121px;
+  }
+  :nth-child(6){
+    width: 109px;
+  }
+}
+table, td, th {
+  border: 1px solid rgba(150,150,150,0.18);
+}
+.td{
+  padding-left: 12px;
+  //height: 47px;
+}
+
+.trStatus{
+  padding-left: 46px;
+}
+
+.trShould{
+  padding-left: 37px;
+}
+
+.trDid{
+  padding-left: 32px;
+}
+
+.trWill{
+  padding-left: 35px;
+}
+
+.antd a,.antd span{
+  text-decoration: none;
+}
+
+.trFile{
+  padding-left: 37px;
+}
+
+td{
+  height: 47px;
+}
+
+th{
+  height: 35px;
+}
+
+a{
+  text-decoration: underline;
+}
+/*新建表单*/
+.newTable{
+  display: inline-block;
+  margin-left:5px;
+  width: 84px;
+  height: 84px;
+  border: 1px solid rgba(150,150,150,0.18);
+  .newTableName{
+    width: 84px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #616161;
+    font-family: FZLTZHK--GBK1-0;
+  }
+  .newTableBtn{
+    width: 84px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.tabelPage{
+  display: flex;
+  justify-content:flex-end;
+}
+.addBtn{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  >button{
+    position: relative;
+    outline: none;
+    border:0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    //color: #3f76fc;
+    >span{
+      color: #3f76fc;
+      font-size: 5.1rem;
+      position: absolute;
+      left: -10px;
+      top: -24px;
+    }
+  }
+}
+/*建立新账单*/
+.showPopUp{
+  position: relative;
+  width: 1920px;
+  height: 950px;
+  background-color: rgba(185, 185, 185, 0.1);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+}
+.formDiv{
+  width: 482px;
+  height: 348px;
+  background: #ffffff;
+  position: fixed;
+  top: 26%;
+  left: 37%;
+  font-size: 1.4rem;
+}
+.formTimeBox{
+  margin-top: 60px;
+  display: flex;
+  height: 42px;
+}
+.formTimeBoxTitle{
+  margin-left: 98px;
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+.formTimeChoose>span{
+  width: 228px;
+  height: 42px;
+  >div{
+    width: 228px;
+    height: 42px;
+    >input{
+      width: 228px;
+      height: 42px;
+      background: #f6f6f6;
+    }
+  }
+}
+/*应收款模块*/
+.shouldGet{
+  height: 42px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  >.shouldGetNum{
+    margin-left: 74px;
+    width: 78px;
+    margin-right: 15px;
+  }
+  >.shouldGetInput{
+    width: 228px;
+    >input{
+      background: #f6f6f6;
+      height: 42px;
+      padding-left: 14px;
+    }
+  }
+}
+
+/*附件模块*/
+.addFile{
+  height: 42px;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+  >.addFileName{
+    margin-left: 124px;
+    width: 28px;
+    margin-right: 17px;
+  }
+
+  >.addFileBtn>span{
+    position: relative;
+    >div:nth-child(2){
+      position: absolute;
+      width: 228px;
+    }
+  }
+
+  >.addFileBtn>span>div>span{
+    >button{
+      padding: 0;
+      padding-right: 15px;
+      position: relative;
+      height: 42px;
+      font-size: 1.4rem;
+      >span{
+        position: absolute;
+        color: #4078fb;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 5px;
+        left:10px;
+        top:8px;
+      }
+      >div{
+        display: inline-block;
+        padding-left: 34px;
+      }
+    }
+  }
+}
+/*事件按钮*/
+.eventBtn>button{
+  height: 36px;
+}
+.affirmBtn{
+  margin-left: 96px;
+  width: 191px;
+  background: #3c77FF;
+  color: #ffffff;
+  border-radius: 21px;
+}
+.affirmBtn:hover{
+
+}
+.cancelBtn{
+  width: 91px;
+  margin-left: 11px;
+  background: transparent;
+  border-radius: 21px;
+}
+/*不弹窗模块*/
+.noShow{
+  display: none;
+}
+.numText{
+  position: absolute;
+  top:164px;
+  left: 170px;
+  color: red;
+}
+.timeText{
+  position: absolute;
+  right: 204px;
+  top: 100px;
+  color: red;
+}
+/*无数据显示模块*/
+.noDate{
+  display: flex;
+  justify-content: center;
+}

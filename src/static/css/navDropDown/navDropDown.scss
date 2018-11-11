@@ -1,0 +1,37 @@
+/*有iconfont时的样式*/
+.nav-drop-down{
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    color: #716E82;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav-drop-down:hover{
+    background-color: #F5F5F5;
+}
+
+.nav-drop-down>i{
+    color: #4675FF;
+    font-size: 2rem;
+    margin-right: 12px;
+    margin-left: 14px;
+}
+
+/*无iconfont时的样式*/
+.nav-drop{
+    line-height: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #716E82;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-drop:hover{
+    background-color: #F5F5F5;
+}
+

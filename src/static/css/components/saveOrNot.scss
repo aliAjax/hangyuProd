@@ -1,0 +1,54 @@
+.saveWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    z-index: 30;
+}
+.container {
+    padding: 15px;
+    width: 510px;
+    height: 260px;
+    background: white;
+    border-radius: 8px;
+    >div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 170px;
+        font-size: 1.4rem;
+        >div:nth-child(1) {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        >div:nth-child(2) {
+            font-size: 1.4rem;
+        }
+    }
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    >div {
+        display: flex;
+        justify-content: center;
+        height: 35px;
+        line-height: 35px;
+        font-size: 1.8rem;
+        border-radius: 20px;
+    }
+    >div:nth-child(1) {
+        width: 190px;
+        margin-right: 10px;
+    }
+    >div:nth-child(2) {
+        width: 90px;
+    }
+}

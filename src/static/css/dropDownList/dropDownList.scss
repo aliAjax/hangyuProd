@@ -1,0 +1,26 @@
+.dropDown-list{
+    position: absolute;
+    top: 90%;
+    display: flex;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    .dropDown-list-item{
+        >div{
+            background-color: #fff;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            white-space: nowrap;
+            cursor: pointer;
+            &:hover{
+                background-color: #ddd;
+            }
+        }
+    }
+    &.active{
+        display: none;
+    }
+}

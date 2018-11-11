@@ -1,0 +1,55 @@
+.box{
+  position: fixed;
+  width: 53px;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: transparent;
+  padding-left: 3px;
+  right: 360px;
+  bottom: 220px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  /*
+  >ur{
+    >li:hover{
+      background: red;
+    }
+  }
+  */
+  li{
+    width: 43px;
+    line-height: 24px;
+    border-left:1px solid rgb(195, 195, 195);
+    text-align: center;
+    position: relative;
+    >span{
+      position: absolute;
+      left: -4px;
+      top: 7px;
+    }
+  }
+  .liChoose{
+    color: #3459de;
+    >span{
+      background-color: #3459de;
+    }
+  }
+  .disc{
+    display: inline-block;
+    width: 8px;
+    height: 7px;
+    /*
+    background-color: #3459de;
+    */
+    background-color: #c4c4c4;
+    border-radius: 100%;
+    margin-right: 8px;
+  }
+}
+/*1366适配*/
+@media screen and (max-width: 1366px) {
+  .box{
+    bottom: 114px;
+  }
+}

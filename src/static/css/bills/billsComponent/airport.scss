@@ -1,0 +1,80 @@
+.hidden{
+  display: none;
+}
+.showDetail{
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.airTabel{
+  width: 933px;
+  //height: 176px;
+  border-collapse: collapse;
+}
+.airThead>tr{
+  height: 35px;
+  >th{
+    font-weight: normal;
+    color: #605e7c;
+  }
+  :nth-child(1){
+    width: 95px;
+  }
+  :nth-child(2){
+    width: 134px;
+  }
+  :nth-child(3){
+    width: 144px;
+  }
+  :nth-child(4){
+    width: 115px;
+  }
+  :nth-child(5){
+    width: 126px;
+  }
+  :nth-child(6){
+    width: 120px;
+  }
+}
+/*表单样式*/
+.td{
+  padding-left: 12px;
+}
+.should{
+  padding-left: 32px;
+}
+.did{
+  padding-left: 22px;
+}
+.will{
+  padding-left: 51px;
+}
+.file{
+  padding-left: 40px;
+  >a{
+    color: #3979ff;
+  }
+}
+.state{
+  padding-left: 46px;
+}
+
+.tabelPage{
+  display: flex;
+  justify-content:flex-end;
+}
+/*无数据显示模块*/
+.noDate{
+  display: flex;
+  justify-content: center;
+}
+
+.noShow{
+  display: none;
+}
+
+a{
+  text-decoration: underline;
+}

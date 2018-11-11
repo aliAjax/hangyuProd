@@ -1,0 +1,114 @@
+.icon-item {
+    font-size: 1.6rem;
+}
+
+.font-gray {
+    color: rgba(96, 94, 124, 0.7);
+}
+.mcar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    z-index: 20;
+}
+.myCompanyAccountRecharge {
+    padding: 25px 25px 0 25px;
+    width: 490px;
+    min-height: 385px;
+    background: white;
+    border-radius: 4px;
+    .items {
+        display: flex;
+    }
+    .line {
+        margin: 20px 0 40px 0;
+        width: 100%;
+        height: 1px;
+        background: #f3f3f3;
+    }
+}
+.top {
+    justify-content: space-between;
+    .left {
+        margin-top: 4px;
+        font-size: 1.6rem;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .title {
+            margin-bottom: 10px;
+        }
+        .anew-publish {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 20px;
+            color: white;
+            border-radius: 20px;
+            background: #3C78FF;
+            cursor: pointer;
+            .icon-item {
+                margin-left: 3px;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+.bottom {
+    flex-direction: column;
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .account-mes {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        .items {
+            flex-direction: column;
+            .item-height {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 35px;
+            }
+            .item-with {
+                width: 180px;
+            }
+        }
+        .left {
+            width: 65px;
+        }
+        .right {}
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 33px;
+        >div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            font-size: 1.5rem;
+            border-radius: 20px;
+        }
+        >div:nth-child(1) {
+            margin-right: 10px;
+            width: 215px;
+        }
+        >div:nth-child(2) {
+            width: 80px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.hours{
+  position: relative;
+  .mes{
+    position: absolute;
+    font-size: 12px;
+    top: 9px;
+    left: 8px;
+    color: #bfbfbf;
+  }
+  .mes:hover{
+    cursor: not-allowed;
+  }
+  >div>div{
+    background: transparent;
+    border: 0 solid transparent;
+  }
+}
+.dropDown{
+  background: #ffffff;
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

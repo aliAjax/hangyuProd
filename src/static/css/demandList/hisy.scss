@@ -1,0 +1,50 @@
+@mixin user-select {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.history-list{
+    >div{
+        padding: 0 14px;
+        height: 35px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: #605E7C;
+        letter-spacing: 0.2px;
+    }
+}
+.icon{
+    font-family: iconfont;
+    color: #d1d1d1;
+    font-size: 2rem;
+    margin-right: 15px;
+}
+.clear-history{
+    border-top: 1px solid #f0f0f0;
+    padding: 0 0 !important;
+    width:234px ;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    >div{
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 2px 7px;
+        cursor: pointer;
+        @include user-select;
+    }
+}
+.closeIcon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #3c78ff;
+    background: white;
+    border: 1px solid #ededed;
+    border-radius: 100%;
+    cursor: pointer;
+}

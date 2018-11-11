@@ -1,0 +1,56 @@
+.box{
+  height:355px;
+  overflow-y: scroll;
+  padding: 25px 25px;
+}
+.login-box{
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+.stylerRed-btn{
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  >div{
+    width: 135px;
+    height: 50px;
+  }
+}
+.reg-phone{
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.reg-phone-text{
+  font-size: 1.4rem;
+}
+.reg-phone-button{
+  background-color: #2e9bd3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 72px;
+  height: 32px;
+  text-align: center;
+}
+.reg-phone-button-disable{
+  background-color: gainsboro;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  width: 72px;
+  height: 32px;
+  text-align: center;
+}
+.reg-phone-button:active{
+  box-shadow: 1px 1px 18px rgba(60,120,255,1);
+}

@@ -1,0 +1,22 @@
+.input-box{
+  width: 350px;
+  height:320px;
+  padding: 55px 35px 0 35px;
+}
+.input-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  >input{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+  }
+}
+.loginErr-mes{
+  text-align: center;
+  line-height: 20px;
+  color:#959595;
+}

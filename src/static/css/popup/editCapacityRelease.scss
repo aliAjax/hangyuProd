@@ -1,0 +1,505 @@
+.container {
+    width: 780px;
+    height: inherit;
+    max-height: 760px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    .content {
+        flex: 1;
+        overflow-y: auto;
+        .title {
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 12px;
+            >h3 {
+                font-size: 20px;
+                margin: 0;
+            }
+            >span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                height: 22px;
+                width: 22px;
+                color: #3c78ff;
+                border: 1px solid #ededed;
+                cursor: pointer;
+            }
+        }
+        .grey-bg {
+            background: #f6f6f6;
+            border-radius: 8px;
+            padding: 5px;
+            margin: 10px;
+        }
+    }
+    .footer {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .submit-btn {
+            $height: 36px;
+            height: $height;
+            margin: 0 8px;
+            border-radius: $height / 2;
+            border: 1px solid #fff;
+            box-shadow: 1px 1px 18px rgba(0, 0, 0, .13);
+            line-height: $height;
+            text-align: center;
+            cursor: pointer;
+        }
+        .saveDraft,
+        .cancel {
+            width: 100px;
+        }
+        .confirm {
+            color: #fff;
+            padding: 0 50px;
+            background: #3c78ff;
+        }
+    }
+}
+
+/*航路设计*/
+
+.route-type {
+    padding: 5px 0;
+    font-size: 12px;
+    >span {
+        margin: 0 15px;
+    }
+}
+
+/*合作方式*/
+
+.cooperation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+    .addNewPlan {
+        height: 32px;
+        padding: 0 30px;
+        line-height: 32px;
+        border-radius: 16px;
+        background: #3c78ff;
+        color: #fff;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}
+
+/*方案列表*/
+
+.plans-con {
+    margin: 5px 10px;
+    padding: 10px 0;
+    .plan-item {
+        .plan-item-title {
+            font-weight: bold;
+            line-height: 40px;
+            text-indent: 1.5rem;
+        }
+        .plan-item-body {
+            height: 80px;
+            padding: 0 5px;
+            background: #f6f6f6;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            .airline {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .point {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    >span {
+                        padding: 5px 3px;
+                        &:last-child {
+                            font-weight: bold;
+                            color: #4578ea;
+                        }
+                    }
+                    .flight-icon {
+                        font-size: 26px;
+                    }
+                }
+            }
+            .price {
+                width: 120px;
+                padding: 0 15px;
+                margin: 0 15px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                align-items: flex-start;
+                &:before,
+                &:after {
+                    content: '';
+                    height: 70%;
+                    width: 1px;
+                    background: #ddd;
+                    position: absolute;
+                }
+                &:before {
+                    left: 0;
+                }
+                &:after {
+                    right: 0;
+                }
+                >span {
+                    padding: 5px 3px;
+                    &:last-child {
+                        font-weight: bold;
+                        color: #4578ea;
+                    }
+                }
+            }
+            .handle {
+                width: 180px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .calculate {
+                    $height: 32px;
+                    height: $height;
+                    line-height: $height;
+                    border-radius: $height / 2;
+                    padding: 0 10px;
+                    background: #fff;
+                    color: rgb(87, 114, 191);
+                    box-shadow: 1px 1px 18px rgba(0, 0, 0, .13);
+                    cursor: pointer;
+                }
+                .handle-btn-con {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                }
+                .handle-btn {
+                    padding: 3px;
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/*时刻方案有效期拟开班期等*/
+
+.other-items-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.other-item {
+    width: 33%;
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    >span {
+        width: 60px;
+    }
+    .right-item {
+        flex: 1
+    }
+}
+
+.days {
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+}
+
+.airpoint {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .col-item {
+        width: 32%;
+    }
+}
+
+/*其他说明*/
+
+.seventh {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 0 20px;
+    line-height: 26px;
+    .text-area {
+        width: 655px;
+        height: 136px;
+        font-size: 12px;
+        line-height: 26px;
+        background: transparent;
+        outline: none;
+        border: none;
+        resize: none;
+    }
+    .row-border {
+        position: absolute;
+        right: 20px;
+        width: 655px;
+        height: 1px;
+        background: #E8E8E8;
+    }
+}
+
+.contact-info {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+}
+
+/*项公共样式*/
+
+.common-style {
+    height: 40px;
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    >div {
+        display: flex;
+        position: relative;
+        padding: 0 5px;
+        &:nth-child(1) {
+            width: 90px;
+            align-items: center;
+            justify-content: center;
+            >i {
+                font-style: normal;
+                font-size: 2rem;
+            }
+            &:after {
+                content: '';
+                width: 1px;
+                height: 70%;
+                background: #ddd;
+                position: absolute;
+                right: 0;
+                top: 15%;
+            }
+        }
+        &:nth-child(2) {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            >input {
+                width: 100%;
+                height: inherit;
+                border: none;
+                background: none;
+                outline: none;
+                text-indent: 1rem;
+            }
+            >span {
+                display: flex;
+                align-items: center;
+            }
+        }
+    } // 提示信息
+    .msg {
+        width: 150%;
+        display: flex;
+        justify-content: flex-end;
+        height: 16px;
+        padding: 0 1rem;
+        position: absolute !important;
+        top: 100%;
+        right: 0;
+        color: red;
+    }
+}
+
+/*出入港时刻*/
+
+.time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    .time-line {
+        padding-left: 10px;
+        &:after {
+            content: '';
+            width: 8px;
+            height: 70%;
+            border: 1px solid #4172f4;
+            border-right: none;
+            position: absolute;
+            left: 0px;
+            top: 15%;
+        }
+    }
+    /*定义经停时刻框宽度和大小*/
+    .time-col {
+        position: relative;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(2) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        /*第二个去掉下边距*/
+        .time-col-items:first-child {
+            margin-bottom: 20px;
+        }
+        .time-col-items {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            >div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /*图标*/
+            .time-col-icon {
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >span {
+                    font-size: 20px;
+                }
+                &.reverse {
+                    >span {
+                        transform: rotateY(180deg);
+                        color: #ceac30;
+                    }
+                }
+            }
+            /*经停进出港时刻*/
+            .time-col-center {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+            }
+        }
+    }
+    .time-box {
+        width: 100%;
+        position: relative;
+        .time-item:first-child {
+            margin-top: 0;
+        }
+        .time-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*时刻 基本样式*/
+
+.time-item {
+    margin-left: 10px;
+    >div:nth-child(1) {
+        width: 40px;
+        >span:first-child {
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 10px;
+            /*margin-right: 5px;*/
+        }
+    }
+    .bgColorBlue {
+        background-color: #4172f4;
+    }
+    .bgColorYellow {
+        background-color: #ceac30
+    }
+    .ident {
+        position: absolute;
+        left: -1.2rem;
+        width: 1.2rem;
+        word-break: break-all;
+    }
+}
+
+/*没有经停时刻*/
+
+.no-pst {
+    .time-col-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        margin-bottom: 20px;
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*图标*/
+        .time-col-icon {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >span {
+                font-size: 20px;
+            }
+            &.reverse {
+                >span {
+                    transform: rotateY(180deg);
+                    color: #ceac30;
+                }
+            }
+        }
+    }
+    .time-col-items:last-child {
+        margin-bottom: 0;
+    }
+}

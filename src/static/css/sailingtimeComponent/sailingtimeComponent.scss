@@ -1,0 +1,55 @@
+.antd a,.antd span{
+  text-decoration: none;
+}
+.box{
+  display: flex;
+  background: transparent;
+  //background: red;
+  width: inherit;
+  height: 93px;
+  font-size: 1.2rem;
+  .title{
+    width: 32px;
+    margin-left: 8px;
+    padding-top: 10px;
+    color: #3979ff;
+  }
+  .title-no{
+    display: none;
+  }
+  .choose{
+    width: 81%;
+    margin-top: 10px;
+    margin-left: 0;
+    >span{
+      margin-top: 4px;
+      background: #FFFFFF;
+      >span{
+        border: 1px solid #d9d9d9;
+      }
+    }
+    >div{
+      font-size: 1.2rem;
+      >label{
+        font-size: 1.2rem;
+        margin-right: 4px;
+        >span{
+          margin: 0;
+          padding: 0;
+          >span{
+            width: 12px;
+            height: 12px;
+          }
+          >span:after{
+            left: 1px;
+            top: 1px;
+          }
+        }
+        >span:nth-child(2){
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+

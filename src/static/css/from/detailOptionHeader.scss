@@ -1,0 +1,26 @@
+.detail-option-header{
+	padding: 0 10px;
+	width: inherit;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #dddddd;
+	>div{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items:center;
+		&:nth-child(1){
+			flex:2;
+		}
+		&:nth-child(2){
+			flex:2;
+		}
+		&:nth-child(3){
+			flex:2;
+		}
+		&:nth-child(4){
+			flex:1;
+		}
+	}
+}

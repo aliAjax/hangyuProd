@@ -1,0 +1,31 @@
+.item{
+    color: #605E7C;
+    white-space:nowrap;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 35px;
+    align-items: center;
+    padding: 0 14px;
+    >div{
+        overflow: hidden;
+        padding-right: 5px;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        >span{
+            color: #3c78ff;
+        }
+    }
+    &:hover{
+        background-color: #f5f5f5;
+    }
+}
+.item-imm{
+    width: 140px;
+}
+.item-dynamics{
+    flex: 1;
+    text-align: right;
+}

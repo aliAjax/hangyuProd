@@ -1,0 +1,140 @@
+.settingBox{
+  position:absolute;
+  z-index:10;
+  width:100%;
+  height:100%;
+  padding-top:65px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f8f8f8;
+}
+.setting-mc{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0,0,0,.2);
+}
+.setting-context{
+  width: 890px;
+  margin:  0 auto;
+  background-color: white;
+  padding:0 55px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.setting-title{
+  height:79px;
+  font-size: 1.5rem;
+  border-bottom:1px solid #e4e4e4;
+  line-height:100px;
+}
+.setting-item-box{
+  padding:0 35px;
+  >li{
+    height: 62px;
+    border-bottom:1px solid #e4e4e4;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    >span{
+      display: inline-block;
+      width: 80px;
+      text-align: right;
+      color: #b2b0bb;
+    }
+    >div{
+      padding-left: 45px;
+    }
+  }
+}
+
+.setting-btn{
+  display: inline-block;
+  margin-top: 4px;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #3c78ff;
+  text-align: center;
+  cursor: pointer;
+  border:none;
+  box-shadow: 1px 1px 6px rgba(60,120,255,.6);
+  outline: none;
+  &:hover{
+    background-color: rgba(60,120,255,.7);
+    color: #fff;
+  }
+  &:active{
+    background-color: rgba(60,120,255,1);
+    color: #fff;
+  }
+}
+.setting-item{
+  display: flex;
+}
+.setting-item1{
+  display: flex;
+  flex-flow:row nowrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  >div:nth-child(1){
+
+  }
+}
+.setting-input{
+  width: 270px;
+  height: 34px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 0 0 5px;
+  font-weight: bold;
+  &:focus{
+    border: 1px solid rgba(60,120,255,.6);
+    box-shadow: 0 0 8px rgba(60,120,255,.6);
+  }
+}
+.setting-input-disabled{
+  background-color:#f4f4f4;
+  border: 1px solid transparent;
+}
+.setting-sub{
+  padding: 90px 0 0 140px;
+  display: flex;
+
+}
+.setting-determine{
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+}
+.setting-cancel{
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+
+  display: inline-block;
+  margin-top: 4px;
+  color: #d3d3d5;
+  text-align: center;
+  cursor: pointer;
+  border:none;
+  box-shadow: 1px 1px 6px #d3d3d5;
+  outline: none;
+  margin-left: 12px;
+  &:hover{
+    background-color: rgba(60,120,255,.7);
+    color: #fff;
+  }
+  &:active{
+    background-color: rgba(60,120,255,1);
+    color: #fff;
+  }
+}

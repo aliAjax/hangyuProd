@@ -1,0 +1,85 @@
+.main-detail-info{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+  font-size: 1.2rem;
+	background-color: #f5f8fe;
+	border-radius: 10px;
+	overflow: hidden;
+	.detail-title-con{
+		height: 50px;
+		padding: 10px;
+		background-color: #f5f8fe;
+		.detail-title{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 40px;
+			>div{
+				display: flex;
+				align-items: center;
+				>h3{
+					// height: 50px;
+					color: #616161;
+					font-size: 20px;
+					font-weight: bold;
+					// display: inline;
+					margin: 0;
+					padding: 0 10px
+				}
+				>span{
+					// display: flex;
+					align-items: center;
+					padding: 3px 8px;
+					color: #fefefe;
+					background-color: #3c77ff;
+					border-radius: 50px;
+				}
+				
+				>button{
+					background: none;
+					border: none;
+					width: 24px;height: 24px;
+					padding: 0;
+					margin: 0 5px;
+					outline: none;
+					cursor: pointer;
+					>i{
+						display: flex;
+						width: inherit;height: inherit;
+						justify-content: center;
+						align-items: center;
+						font-size: 30px;
+						color: #4077fc;
+					}
+				}
+			}
+			.out-of {
+				background: none;
+				color: #aaa;
+				cursor: pointer;
+				border: 1px solid #ddd;
+				padding: 3px 10px
+			}
+
+		}
+	}
+	.detail-body{
+		flex:1;
+	}
+	/*洽谈*/
+	.detail-char{
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		>span{
+			display: flex;
+			padding: 5px 60px;
+			background-color: #4077fc;
+			border-radius: 50px;
+			cursor: pointer;
+			color: #fefefe;
+		}
+	}
+}

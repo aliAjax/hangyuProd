@@ -1,0 +1,101 @@
+.backColor{
+  background: #f8f8f8;
+}
+.innerBox{
+  position: relative;
+  width: 1027px;
+  margin: 0 auto;
+}
+.title{
+  font-size: 1.6rem;
+  color: #605e7c;
+  font-family: NotoSansHans-Bold;
+  margin-top: 68px;
+  margin-bottom: 20px;
+}
+
+.marginTop{
+  width: 240px;
+  height: 200px;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 0px;
+  margin-right: 18px;
+}
+
+.marginTop4{
+  width: 240px;
+  height: 200px;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+
+.itemsBox{
+  height: 772px;
+  overflow-y: scroll;
+  background: transparent;
+  position: relative;
+  >div{
+    //display: inline-block;
+    float: left;
+    overflow: hidden;
+  }
+  img{
+    margin-left: -226px;
+    height: 130px;
+    background-color: #d4a9a9;
+  }
+  .airportName{
+    margin-left: 12px;
+    margin-top: 14px;
+    color: #484848;
+    font-size: 1.7rem;
+  }
+  .airportCode{
+    margin-left: 12px;
+    margin-top: 9px;
+    color: #484848;
+    font-size: 1.2rem;
+  }
+}
+.itemBox{
+  width: 240px;
+  height: 200px;
+  position: relative;
+  background-color: #ffffff;
+  margin-right: 18px;
+  margin-top: 20px;
+}
+
+.itemBox4{
+  width: 240px;
+  height: 200px;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.num{
+  position: absolute;
+  top: 108px;
+  right: 0;
+  width: 100px;
+  height: 22px;
+  background-color: #3f76fc;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*1366适配*/
+@media screen and (max-width: 1366px) {
+  .title{
+    //bottom: 404px;
+    margin-top: 30px;
+  }
+  .itemsBox{
+    height: 470px;
+  }
+}

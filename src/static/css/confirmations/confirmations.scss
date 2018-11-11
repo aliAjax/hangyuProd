@@ -1,0 +1,99 @@
+/*二次确认框*/
+.tip-shade{
+	width: 100%;height: 100%;
+	background: rgba($color: #000000, $alpha: 0.2);
+	position: fixed;
+	top: 0;left:0;
+	z-index: 10000;
+}
+.tip-info{
+	$width:450px;$height:220px;
+	position: fixed;
+	z-index: 10001;
+	width: $width;height: $height;
+	left: 50%;top: 30%;
+	margin-left: - ($width / 2);
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	.tip-title,.tip-content,.tip-btn{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.tip-title{
+		height: 40px;
+		justify-content: space-between;
+		display: flex;
+		border-bottom: 1px solid #e8e8e8;
+		>div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 10px;
+		}
+	}
+	.tip-content{
+		flex:1;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 5px 18px;
+		font-weight: normal;
+		>p{
+			font-size: 10px;
+			line-height: 30px;
+		}
+		.sub-title{
+            font-size: 18px;
+            line-height: 45px;
+		}
+	}
+	.tip-btn{
+		height: 40px;
+		justify-content: center;
+	}
+	.confirm,.cancel{
+		$btnHeight:28px;
+		outline: none;
+		border: none;
+		background: none;
+		height:$btnHeight;
+		padding: 0px 45px;
+		margin: 0 8px;
+		border: $btnHeight;
+		border-radius: $btnHeight;
+		box-shadow: 0 0 5px #d0d0d0;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+	.confirm{
+		background-color: rgba(25, 92, 245, 0.8);
+		color: #fefefe;
+		&:hover{
+			background-color: rgba(25, 92, 245, 1)
+		}
+	}
+	.cancel{
+		background: rgba(224, 224, 224, 0);
+		color: #a0a0a0;
+		&:hover{
+			background-color: rgba(224, 224, 224, 1);
+		}
+    }
+    .close{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        width: 20px;height: 20px;
+		border-radius: 100%;
+		border: 1px solid #e8e8e8;
+		color: #908fa3;
+		background-color: rgba(0,0,0,0);
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover{
+			background-color: rgba(0,0,0,0.1);
+		}
+    }
+}

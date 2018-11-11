@@ -1,0 +1,24 @@
+
+  .icon{
+    color:rgba(60,120,255,0.4);
+    font-size: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .card{
+    background-color: transparent;
+    //box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.05);
+    padding-bottom: 0;
+    >div{
+      border-radius: 10px;
+      >div{
+        border-color:white ;
+        background: white;
+        color: #605e7c;
+      }
+      :nth-child(1){
+        display: none;
+      }
+    }
+  }

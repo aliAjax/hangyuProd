@@ -1,0 +1,51 @@
+.demandListItem{
+    height: 60px;
+    display: flex;
+    margin: 0 8px;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    >div{
+        padding: 0px 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &:nth-child(1){
+            flex: 2;
+        }
+        &:nth-child(2){
+            flex: 2;
+        }
+        &:nth-child(3){
+            flex: 3;
+            cursor: pointer;
+            overflow: hidden;
+            >div{
+                color:#4077FC;/*#2196f3*/
+                width:99%;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+        }
+        &:nth-child(4){
+            flex: 2;
+            
+            >div{
+                text-align: center;
+                // width:80px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+
+            }
+        }
+    }
+    .msg-tip{
+        width: 8px;height: 8px;
+        border-radius: 100%;
+        background: red;
+        position: absolute;
+        right: 0;
+    }
+}

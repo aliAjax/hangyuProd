@@ -1,0 +1,247 @@
+.market-detail-con{
+	width: 580px;
+	height: inherit;
+	padding: 5px 10px;
+	display: flex;
+	flex-direction: column;
+	i{
+		font-style: normal;
+	}
+	>.market-top-info{
+		height: 38px;
+		width: inherit;
+		display: flex;
+		flex-direction: row;
+		color: #fefefe;
+		>.market-top-info-item{
+			padding: 0 5px;
+			display: flex;
+			flex:1;
+			flex-direction: inherit;
+			justify-content: space-around;
+			color: inherit;
+			>div{
+				>i{
+					font-size: 30px;
+				}
+				display: flex;
+				flex-direction: inherit;
+				flex-wrap: nowrap;
+				align-items: center;
+				color: inherit;
+
+				>span{
+					padding: 0 4px;
+					white-space: nowrap;
+					display: flex;
+				}
+			}
+			.close-btn{
+				>i{
+					display: flex;
+					font-size: 20px;
+					width: 20px;height: 20px;
+					background: #fefefe;
+					align-items: center;
+					justify-content: center;
+					border-radius: 50%;
+					color:#111111;
+					cursor: pointer;
+				}
+			}
+			&:nth-child(2){
+				>div{
+					>span{
+						&:last-child{
+							font-size: 2rem;
+							font-weight: bold;
+							color: #f58d1a;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.market-detail-info{
+		display: flex;
+		flex-direction: column;
+		flex:1;
+		background-color: #f5f8fe;
+		border-radius: 10px;
+		overflow: hidden;
+		.detail-title{
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			background-color: #f5f8fe;
+			>h3{
+				color: #616161;
+				font-size: 20px;
+				font-weight: bold;
+				margin: 0;
+				padding: 0 10px
+			}
+			>button{
+				background: none;
+				border: none;
+				width: 24px;height: 24px;
+				padding: 0;
+				outline: none;
+				cursor: pointer;
+				>i{
+					display: flex;
+					width: inherit;height: inherit;
+					justify-content: center;
+					align-items: center;
+					font-size: 30px;
+				}
+			}
+
+		}
+		.detail-body{
+			flex:1;
+			.capacity-detail{
+				height: 170px;
+				padding: 10px 20px;
+				background-color: blue;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				.wireframe{
+					height: 100px;width: 15px;
+					border:1px solid #DDDDDD;
+					border-right: none;
+					position: relative;
+					display: flex;
+					align-items: center;
+					.circle{
+						height: 30px;width: 30px;border-radius: 50%;
+						background-color: #fefefe;
+						position: absolute;
+						left: -15px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-weight: bold;
+						color: blue;
+					}
+				}
+				.level-or-enter-time{
+					height: 100%;
+					flex:3;
+					display: flex;
+					flex-direction: column;
+					color: #fff;
+					justify-content: space-between;
+					>div{
+						height: 50px;
+						padding:0 8px;
+						color: inherit;
+						display: flex;
+						flex-direction: column;
+						>span{
+							&:first-child{
+								color: #eee;
+								font-size: 10px;
+								letter-spacing: 1px;
+							}
+							&:last-child{
+								font-size: 20px;
+								font-weight: bold;
+								letter-spacing: 1px;
+							}
+						}
+					}
+				}
+				.quoted{
+					height:100%;
+					flex:4;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					>div{
+						color: #eee;
+						height: 50px;
+						>span{
+							color: #eee;
+							font-size: 10px;
+							letter-spacing: 1px;
+						}
+						>div{
+							display: flex;
+							flex-direction: row;
+							color: inherit;
+							>span{
+								margin-right: 10px;
+								>span{
+									padding: 0 3px;
+									font-size: 1.5rem;
+									color: #f58d1a;
+								}
+							}
+						}
+					}
+				}
+				.schedule{
+					flex:1;
+					height: 100%;
+					>div{
+						display: flex;
+						flex-direction: column;
+						color: #eee;
+						height: 50px;
+
+					}
+				}
+			}
+
+			.plane-info{
+				padding: 30px;
+				display: flex;
+				flex-wrap: wrap;
+				>div{
+					width: 50%;
+					padding: 5px 10px;
+					>span{
+						font-size: 10px;
+						&:first-child{
+							display: inline-block;
+							width: 100px;
+							
+						}
+						&:last-child{
+							color: #03a9f4;
+						}
+					}
+					&.remark{
+						width: 100%;
+						margin-top: 10px;
+						>span{
+							display: block;
+							padding: 5px 0;
+							&:last-child{
+								color: #000;
+							}
+						}	
+					}
+				}
+			}
+		}
+		.detail-char{
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			>span{
+				display: flex;
+				padding: 5px 60px;
+				background-color: #4077fc;
+				border-radius: 50px;
+				cursor: pointer;
+				color: #fefefe;
+			}
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.role-search-input{
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  height: inherit;
+  width: 240px;
+  border: none;
+  outline: none;
+  padding-right: 5px;
+  text-indent: 1rem;
+  background: none;
+  background-color: #fefefe;
+}
+.newIcon{
+  display: flex;
+  border-right: 2px solid #e3e3e3;
+  >div{
+    margin-left: 3px;
+  }
+  >div>div{
+    >div{
+      margin-left: 5px;
+      margin-right:0px;
+    }
+    >span{
+      right: 3px;
+    }
+  }
+  >span{
+    line-height: 32px;
+    margin: 0;
+    margin-right: 5px;
+  }
+}
+
+.lockBox{
+  position: absolute;
+  right: 6px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  .lock{
+    color: #4077fc;
+  }
+  .unlock{
+    color: #a2a2a2;
+  }
+  >div{
+    display: none;
+    font-size: 1.4rem;
+    position: absolute;
+    width: 280px;
+    left: -240px;
+    top: -115px;
+    padding: 9px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    border-radius: 8px;
+    border: solid 1px #e9e9e9;
+  }
+}
+.lockBox:hover{
+  >div{
+    display: block;
+  }
+}
+
+
+/*下拉选项模块*/
+.capacity-release-content-box{
+  width: 245px;
+  height: 43px;
+  padding-right: 10px;
+  color: #3c78ff;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  >.capacity-release-content-filter-type{
+    white-space: nowrap;
+    color: #3c78ff;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-right: 2px solid #e3e3e3;
+  }
+  >label>:nth-child(1)>input{
+    width: 50px;
+    margin: 0;
+  }
+  >label>:nth-child(2)>input{
+    width: 120px;
+    margin-left: 10px;
+    padding-right: 44px;
+  }
+  >span>div>input{
+    width: 120px;
+  }
+  >span{
+    display: inline-block;
+    >input{
+      width: 120px;
+    }
+  }
+}
+.capacity-release-content-box input{
+  margin-right: 10px;
+  width: 121px;
+  border:1px solid transparent;
+  outline: none;
+  background-color: #f6f6f6;
+}
+/*修改下拉框样式*/
+.capacity-release-content-new>div{
+  border: 0px solid white;
+  color: #3c78ff;
+  background-color: #f6f6f6;
+  >span{
+    top:43%
+  }
+  >div>div{
+    color: #3c78ff;
+  }
+}
+
+/*适配1366*/
+@media screen and (max-width: 1366px) {
+  .capacity-release-input-hover-fzz {
+    margin-left: 0;
+    width: 110px;
+  }
+  .airTypeBox-fzz {
+    left: -20px;
+    width: 150px;
+  }
+  .capacity-release{
+    width: 567px;
+  }
+  .capacity-release-content{
+    overflow-y: scroll;
+    padding-bottom: 131px;
+    margin-bottom: 131px;
+  }
+  .capacity-release-content-button{
+    width: 567px;
+  }
+  .capacity-release-content-name{
+    font-size: 2rem;
+    padding-top: 30px;
+    margin-bottom: 29px;
+  }
+  .capacity-release-content-box{
+    height: 40px;
+  }
+  .testMargin{
+    margin-bottom: 15px;
+  }
+  .inOut{
+    >div:nth-child(2){
+      margin-top: 6px;
+    }
+  }
+  .borderline{
+    height: 68px;
+  }
+  .ninth{
+    margin-bottom: 24px;
+  }
+  .arrv_time{
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,20 @@
+const CHANGE_TEXT = 'CHANGE_TEXT';
+const BUTTON_CLICK = 'BUTTON_CLICK';
+const CLICKCHILID = 'CLICKCHILID';
+const LINETYPE = 'LINETYPE';
+const ROLE = 'ROLE';
+const AIRLIST = 'AIRLIST';
+const SUBSIDYPOLICY  = 'SUBSIDYPOLICY';
+const INITDATA  = 'INITDATA';   // 添加航司，机场，城市的数据
+const NEWEMAIL  = 'NEWEMAIL';   // 修改邮箱
+export {
+    CHANGE_TEXT,
+    BUTTON_CLICK,
+    CLICKCHILID,
+    ROLE,
+    AIRLIST,
+    SUBSIDYPOLICY,
+    INITDATA,
+    NEWEMAIL,
+    LINETYPE
+}

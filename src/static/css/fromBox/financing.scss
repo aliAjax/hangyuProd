@@ -1,0 +1,360 @@
+.formBox{
+  width: 519px;
+  height: 918px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 11px 0px
+  rgba(85, 85, 85, 0.11);
+  .formBoxNav{
+    cursor: pointer;
+    width: inherit;
+    background-color: #f5f8fe;
+    box-shadow: 0px 2px 11px 0px
+    rgba(85, 85, 85, 0.11);
+    ul{
+      position: relative;
+      top: -4px;
+      width: inherit;
+      li{
+        text-align: center;
+        float: left;
+        line-height: 50px;
+        font-size: 1.3rem;
+        width:50%;
+        height: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        .navBorder{
+          color: #4077fc;
+          border-bottom: solid 2px #4077fc;
+        }
+        .formIcon{
+          position: relative;
+          font-size: 20px;
+          top: 3px;
+        }
+        .applicationNum{
+          padding-left: 3px;
+          padding-right: 3px;
+          margin-left: 5px;
+          display: inline-block;
+          line-height: 18px;
+          background-color: #f63756;
+          color: white;
+          min-width: 16px;
+          height: 16px;
+          border-radius: 16px;
+        }
+      }
+    }
+    li:nth-child(1){
+      border-right:solid #f3f3f3 2px ;
+    }
+  }
+}
+.financingBox{
+  margin-left: 26px;
+  margin-right: 14px;
+  .title{
+    font-size: 2rem;
+    font-family: NotoSansHans-Medium;
+    color: #484848;
+    height: 115px;
+    line-height: 115px;
+  }
+  .radio{
+    >span{
+      margin-right: 27px;
+    }
+  }
+  .component{
+    margin-top: 38px;
+    >div{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 17px;
+    }
+  }
+  .other{
+    .capacity-release-content-other{
+      display: flex;
+      justify-content: space-between;
+      margin-top:28px;
+      margin-bottom: 18px;
+      .row-border {
+        position: absolute;
+        right: 0px;
+        width: 423px;
+        height: 1px;
+        background: #E8E8E8;
+      }
+    }
+  }
+  .phoneNum{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    .capacity-release-content-box{
+      justify-content: unset;
+    }
+    input{
+      border: solid transparent 0px;
+      background: transparent;
+      padding: 0px;
+      text-indent: 5px;
+      width: 150px;
+      margin-left: 5px;
+    }
+  }
+  .btns{
+    margin-top: 315px;
+    display: flex;
+    justify-content: center;
+    :nth-child(1){
+      margin-right: 11px;
+    }
+  }
+}
+
+.recordLine{
+  margin-left: 23px;
+}
+
+.applicationRecord{
+  margin-left: 26px;
+  margin-right: 14px;
+  height: inherit;
+  .applicationRecordNav{
+   padding-left: 29px;
+    padding-right: 43px;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px #f3f3f3;
+    div{
+      margin-top: 35px;
+      font-size: 1.2em;
+      color: rgba(96, 94, 124, 0.8);
+      >a{
+        color: rgba(96, 94, 124, 0.8);
+        >i{
+          color: #3c78ff;
+        }
+      }
+    }
+  }
+  .applicationRecordList{
+    height: calc(100% - 110px) !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .noData{
+      margin-top: 59px;
+      font-size: 17px;
+      justify-content: center;
+      border: none;
+    }
+    >div{
+      height: 52px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 9px;
+      margin-right: 54px;
+      border-bottom: solid 2px #f3f3f3;
+      .listTime{
+        margin-left: 5px;
+        width: 60px;
+      }
+      .listTitle{
+        max-width: 245px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: center;
+      }
+      .listStatus{
+        text-align: center;
+        width: 50px;
+        text-align: left;
+      }
+      .msePoint{
+        position: absolute;
+        right: -18px;
+        width: 9px;
+        height: 9px;
+        background-color: #f63756;
+        border-radius: 16px;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+/*下拉选项模块*/
+.capacity-release-content-box{
+  width: 230px;
+  height: 43px;
+  color: #3c78ff;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  >.capacity-release-content-filter-type{
+    width: 70px;
+    text-align: center;
+    span{
+      font-size: 2rem;
+    }
+    .iconAir{
+      position: relative;
+      top:-2px;
+      font-size: 1.2rem;
+    }
+    white-space: nowrap;
+    color: #3c78ff;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-right: 2px solid #e3e3e3;
+  }
+  >label>:nth-child(1)>input{
+    width: 50px;
+    margin: 0;
+  }
+  >label>:nth-child(2)>input{
+    width: 120px;
+    margin-left: 10px;
+    padding-right: 44px;
+  }
+  >span>div>input{
+    width: 120px;
+  }
+  >span{
+    display: inline-block;
+    >input{
+      width: 120px;
+    }
+  }
+}
+
+.test{
+  width: 130px;
+  >div>div:nth-child(1){
+    width: 100%;
+    max-width: none;
+    padding: 7px 22px 7px 22px;
+    >a{
+      top:11px;
+    }
+  };
+  >div>div:nth-child(2)>div{
+    width: 50%;
+    >ul>li{
+      padding-left: 22px;
+    }
+  }
+}
+
+.my-intention-nav-send{
+  text-align: center;
+  width: 81px;
+}
+
+.forDiv{
+  height: 43px;
+  width: 10px;
+}
+
+.otherText{
+  width: 423px;
+  height: 65px;
+  border: 0;
+  outline: none;
+  font-size: 1.4rem;
+  padding-top: 3px;
+}
+
+.mes{
+  white-space: nowrap;
+  position: absolute;
+  color: red;
+  top:43px;
+}
+
+@media screen and (max-height: 768px) {
+  .applicationRecordList{
+    height: calc(100% - 100px) !important;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .formBox{
+    width: 480px;
+  }
+  .applicationRecordList{
+   >div{
+     margin-right: 54px;
+     justify-content: space-between;
+   }
+  }
+  .listTitle{
+    width: unset !important;
+    max-width: 220px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .listStatus{
+    width: 50px;
+    text-align: left !important;
+  }
+  .msePoint{
+    position: absolute;
+    right: -11px;
+  }
+  .capacity-release-content-box{
+    width: 210px;
+    height: 40px;
+  }
+  .role-search-input{
+    text-indent: 12px;
+  }
+  .forDiv{
+    height: 40px;
+  }
+  .capacity-release-content-other{
+    margin-top: 0px;
+  }
+  .otherText{
+    width: 380px;
+  }
+  .title{
+    height: 95px;
+    line-height: 95px;
+  }
+  .row-border{
+    width: 380px !important;
+  }
+  .formBox{
+    position: relative;
+    height: inherit;
+  }
+  .btns{
+    margin-top: 0px !important;
+    position: absolute;
+    bottom: 31px;
+    left: 55px;
+  }
+  .mes{
+    top: 40px;
+  }
+  .applicationRecordNav{
+    height: 52px !important;
+    >div{
+      margin-top: 23px !important;
+    }
+  }
+  .applicationRecordList{
+    min-height: 482px !important;
+  }
+}

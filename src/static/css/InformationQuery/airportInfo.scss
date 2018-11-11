@@ -1,0 +1,230 @@
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.hide-box{
+    width:100%;
+    height:70px;
+    visibility:hidden;
+}
+.info-wrapper{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+    .airport-info{
+        position:absolute;
+        left:0;
+        top:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        width:1350px;
+        height:800px;
+        z-index: 99;
+        color:#605e7c;
+        background-color:#ffffff;
+    }
+}
+.top{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background-color:#3c78ff;
+    display:flex;
+    justify-content: space-between;
+    box-sizing:border-box;
+    padding:0 25px 0 17px;
+    color:#fff;
+    .name{
+        line-height:70px;
+        font-size:1.8rem;
+        color: white;
+    }
+    .icon{
+        width:20px;
+        height:20px;
+        margin:25px 0;
+        line-height:20px;
+        color:#3c78ff;
+        text-align:center;
+        background-color:#fff;
+        border-radius:100%;
+        cursor:pointer;
+        .iconfont{
+            font-size:1.2rem;
+        }
+    }
+}
+.content{
+    width:100%;
+    height:730px;
+    overflow:hidden;
+    overflow-y:scroll;
+    display:flex;
+    .detail{
+        width:1100px;
+        margin-right:250px;
+    }
+}
+.box{
+    .box-til{
+        height:50px;
+        line-height:50px;
+        font-size:1.6rem;
+        font-weight:bold;
+        margin:20px 0 0 26px;
+        border-bottom:1px solid #ccc;
+        display:flex;
+        justify-content: start;
+        .iconfont{
+            font-size:2.8rem;
+            font-weight:normal;
+        }
+    }
+    .box-item{
+        width:100%;
+        box-sizing:border-box;
+        padding:37px 60px 0 0;
+        display:flex;
+        flex-wrap: wrap;
+        li{
+            width:510px;
+            display:flex;
+            height:40px;
+            line-height:40px;
+            position:relative;
+            >div:first-of-type{
+                width:230px;
+                color:rgba(96, 94, 124, 0.7);
+                padding-right:10px;
+                text-align:right;
+                line-height:40px;
+            }
+            >div:nth-of-type(2){
+                width:270px;
+                font-size:1.4rem;
+                line-height:40px;
+                padding-left:10px;
+            }
+            .over-flow{
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            .over-oneline{
+
+            }
+        }
+        .li-note{
+            width:100%;
+            height:auto !important;
+            line-height:26px;
+            >div:last-of-type{
+                width:790px;
+            }
+        }
+    }
+}
+.table{
+    margin:20px 0 0 26px;
+    border:1px solid #bfbfbf;
+    ul{
+        display:flex;
+        li{
+            flex: 1 1;
+            padding:30px 5px;
+            text-align:center;
+            border-right:1px dashed #bfbfbf;
+        }
+        li:last-of-type{
+            border-right:0;
+        }
+    }
+    ul:nth-of-type(odd){
+        background-color:#f5f5f5;
+    }
+}
+.sidebar{
+    width:230px;
+    position:absolute;
+    bottom:112px;
+    right:10px;
+}
+.sidebar-list{
+    width:220px;
+    padding:0 10px;
+    border-left:1px solid #ccc;
+    li{
+        height:42px;
+        width:83px;
+        line-height:42px;
+        display:flex;
+        font-size:1.3rem;
+        box-sizing:border-box;
+        cursor:pointer;
+        position:relative;
+        span{
+            font-size:2.2rem;
+        }
+        .point{
+            color: #3c78ff;
+            position:absolute;
+            left:-13px;
+            bottom:-4px;
+            display:block;
+            width:5px;
+            height:5px;
+            line-height:2px;
+            border-radius:100%;
+            background-color: #3c78ff;
+        }
+        .display-none {
+            display: none;
+        }
+    }
+    .active{
+        border-bottom:2px solid #3c78ff;
+    }
+}
+.list-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 245px;
+    display: flex;
+    padding: 10px;
+    width: 260px;
+    //height:120px;
+    line-height:24px !important;
+    background: white;
+    border-radius: 4px;
+    //box-shadow: 0 2px 11px rgba(96,94,124,0.37);
+    z-index: 3;
+    border:1px solid #E3E3E3;
+    font-size:1.4rem;
+}
+.display-none {
+    display: none;
+}
+
+@media screen and (max-width: 1366px){
+    .info-wrapper {
+        .airport-info {
+            height: 530px;
+            width: 1100px;
+            overflow: hidden;
+        }
+    }
+    .content {
+        height: 460px;
+    }
+    .sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,159 @@
+/*说明信息*/
+.plane-info{
+	width: 94%;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	.base-info{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		>div{
+			box-sizing: border-box;
+			height: 22px;line-height: 22px;
+			padding: 0 8px;margin: 8px 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			position: relative;
+			&:nth-child(2n){
+				width: 44%;
+			}
+			&:nth-child(2n-1){
+				width: 55%;
+			}
+			>div{
+				/*其他说明用那种样式嘞? 这种不用加多判断*/
+				&:first-child{
+					width: 100px;
+				}
+				&:last-child{
+					flex:1;
+					color: #4077FC;
+				}
+			}
+		}
+		/*编辑*/
+		.default,.edit{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			color: inherit;
+			>span{
+				display: inline-block;
+				padding: 0 5px;
+				font-size: 2rem;
+				height: inherit;width: 2rem;
+				cursor: pointer;
+				transition: all 0.3s;
+			}
+		}
+		.default{
+			>span{
+				&:hover{
+					color: black;
+				}
+			}
+			
+		}
+		.edit{
+			>div{
+				width: 120px;
+			}
+			.confirm{
+				color: #58a324;
+			}
+			.cancel{
+				color: #de4c48;
+			}
+		}
+	}
+	.last-child-wrap{
+		/*说明*/
+		>div{
+			height: auto;
+    		align-items: flex-start;
+			&:last-child{
+				width: 100%;
+				margin-top: 10px;
+			}
+		}
+		
+	}
+	.time{//时刻
+		display: flex;
+		flex-direction: row;
+		padding: 0 8px;
+		margin: 10px 0;
+		>div{
+			&:first-child{
+				width: 100px;
+			}
+			&:last-child{
+				flex:1;
+			}
+		}
+		/*.multi{
+			width: 100%;
+			>div{
+				height: 50%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				color: #4077FC;
+				>div{
+					display: flex;
+					align-items: center;
+					justify-content: center; 
+					color: inherit;
+					&:nth-child(2n-1){
+						width: 20%;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					&:nth-child(2n){
+						width: 20%;
+					}
+				}
+			}
+		}*/
+		.multi,.less{
+			width: 100%;
+			>div{
+				height: 50%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				color: #4077FC;
+				>div{
+					height: 35px;
+					line-height: 35px;
+					text-align: center;
+					color: inherit;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					&:nth-child(2n-1){
+						width: 35%;
+					}
+					&:nth-child(2n){
+						width: 20%;
+					}
+				}
+			}
+		}
+		.multi{
+			>div{
+				>div{
+					&:nth-child(2n-1){
+						width: 20%;
+					}
+					&:nth-child(2n){
+						width: 20%;
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,72 @@
+.measuring-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1030;
+}
+.container {
+    width: 540px;
+    height: 310px;
+    background: white;
+    border-radius: 8px;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 15px 24px;
+        box-shadow: 0px 2px 14px rgba(60, 119, 255, 0.13);
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px 0 30px;
+        height: 146px;
+        font-weight: bold;
+        >div:nth-child(1) {
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        >div:nth-child(2) {
+            font-size: 1.4rem;
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        >div {
+            height: 27px;
+            font-size: 1.4rem;
+            line-height: 27px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        >div:nth-child(1) {
+            margin-right: 10px;
+        }
+        >div:nth-child(2) {
+            width: 80px;
+        }
+    }
+    .tips {
+        margin-top: 38px;
+        padding: 0 15px 15px 24px;
+        font-size: 1.2rem;
+        color: #FF8181;
+        >div {
+            color: #FF8181;
+        }
+        a {
+            color: #FF8181;
+            text-decoration: underline;
+        }
+    }
+}
+

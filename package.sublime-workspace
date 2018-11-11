@@ -1,0 +1,580 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"backface-visibility"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"spac",
+				"space-around"
+			],
+			[
+				"sp",
+				"space-around"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"reder",
+				"renderFrom"
+			],
+			[
+				"jude",
+				"judgeTab"
+			],
+			[
+				"scheme",
+				"schemeStr"
+			],
+			[
+				"price",
+				"priceType"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"space",
+				"space-around"
+			],
+			[
+				"getElement",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Element"
+			],
+			[
+				"fligt",
+				"flightScheme"
+			],
+			[
+				"air",
+				"airPort"
+			],
+			[
+				"receiv",
+				"receivedScheme.js"
+			],
+			[
+				"span",
+				"space-between"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"data",
+				"data2"
+			],
+			[
+				"scroll",
+				"scrollBottom"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"demand",
+				"demandLists"
+			],
+			[
+				"handleTool",
+				"handleToolClick"
+			],
+			[
+				"logo",
+				"logo.png\tw:143 h:66"
+			],
+			[
+				"static",
+				"static/"
+			],
+			[
+				"page",
+				"pageX"
+			],
+			[
+				"animation-",
+				"animation-timing-function"
+			],
+			[
+				"aling",
+				"align-items"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"html",
+				"index.html"
+			],
+			[
+				"getElemen",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 305.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"package control :install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 558.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/E/workspace/work/hangyu-web-v2/src/page/popup/editAirLineRelease.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/plan.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/itemDetailForm.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/received.js",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/CTags/Default.sublime-mousemap",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/CTags/Default.sublime-keymap",
+		"/E/wamp/www/fileupload/index.html",
+		"/E/wamp/www/fileupload/received.php",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/capacityRelease.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/popup/editAirlineRelease.scss",
+		"/E/workspace/work/hangyu-web-v2/.gitignore",
+		"/E/workspace/work/hangyu-web-v2/src/page/loginAndRegister/boxes.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/fromBox.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/airLineRelease.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/airLineRelease.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/popup/popup.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/rsTime.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/popup/editCapacityRelease.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/airLineNeed.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/airLineForm/airLineNeed.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/airLineForm/airLineEscrow.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/rsTime.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/mainInfo.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/popup/index.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/index/index.js",
+		"/E/workspace/work/hangyu-web-v2/src/index.js",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/User/ReactIDE.sublime-settings",
+		"/E/workspace/explore/tongle_v2/src/index.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/volume.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/bmap/infPanel.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/received.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/rsAirline.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/headerInfo.scss",
+		"/E/workspace/work/hangyu-web-v2/src/components/roleDemand/roleDemandList.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/roleDemand.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/rsAirline.js",
+		"/E/workspace/work/hangyu-web-v2/src/components/roleDemand/roleDemandItem.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/headerInfo.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/myReceiveScheme.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/demandFilter.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/receivedScheme.js",
+		"/E/workspace/work/hangyu-web-v2/src/components/roleDemand/demandFilter.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/myReceivedScheme.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/receivedScheme.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/mainInfo.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/userCenter/myIntention/myIntention.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/itemDetailForm.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemand.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/rsScheme.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/capacityPlan.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/rsScheme.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/planInfo.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/demandItemDetail.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/marketDemand.js",
+		"/E/workspace/explore/tongle_v2/.babelrc",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/flightScheme.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/airlineDemand.js",
+		"/E/workspace/work/hangyu-web-v2/src/components/roleDemand/roleDemandChild.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/hangsiDemandItem.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/detailMainInfo.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/myrsScheme.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/airPortDemandItem.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/myrsScheme.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/capacityScheme.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/capacityScheme.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/demandList.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/flightScheme.scss",
+		"/E/workspace/work/hangyu-web-v2/package.json",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/antd/antdCover.css",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/detailMainInfo.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/detailTopInfo.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/capacityInfo.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/capacityInfo.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/marketDetail.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/airlineMarketDetail.js",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
+		"/E/workspace/work/hangyu-web-v2/src/page/nav/nav.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/airportDemand.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/airportMarketDetail.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/capacityInfomation.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/demandItemDetail.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/detailTopInfo.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/capacityInfomation.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/detailOptionHeader.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/detailOptionHeader.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/from/formMain.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/test.js",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_antd@3.4.1@antd/package.json",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_antd@3.4.1@antd/lib/collapse/Collapse.js",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_antd@3.4.1@antd/lib/index.js",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_antd@3.4.1@antd/lib/collapse/index.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/fromBox/airportDemandDetail.js",
+		"/E/workspace/work/hangyu-web-v2/src/utils/events.js",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_events@1.1.1@events/events.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemandCommon.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemandList.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemandChild.scss",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_min-document@2.19.0@min-document/event.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/nav/nav.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemandScroll.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/demandList.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemandItem.scss",
+		"/E/workspace/work/hangyu-web-v2/src/page/nav/dropDown.js",
+		"/E/workspace/work/hangyu-web-v2/src/components/testTransition2.js",
+		"/E/workspace/work/hangyu-web-v2/src/components/dropDownList/dropDownList.js",
+		"/E/workspace/work/hangyu-web-v2/src/page/demandList/myDemand.js",
+		"/E/workspace/work/hangyu-web-v2/node_modules/_react-dom@16.3.2@react-dom/cjs/react-dom.development.js",
+		"/E/workspace/work/hangyu-web-v2/src/components/roleDemand/roleDemandListItem.js",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/demandList/roleDemandListItem.scss",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/main.css",
+		"/E/workspace/work/hangyu-web-v2/src/static/css/transition.css",
+		"/E/workspace/explore/test/select.html",
+		"/E/workspace/explore/test/sass/nav.scss",
+		"/C/Users/uyuer/Downloads/5iweb2016010801/index3.html",
+		"/E/workspace/work/hangyu-web-v2/src/components/test.js",
+		"/C/Users/uyuer/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-mousemap",
+		"/E/workspace/work/hangyu-web-v2/scripts/build.js",
+		"/E/workspace/explore/mines_react/mines_v1/src/index.js",
+		"/E/workspace/work/航遇4.8/个人中心.html",
+		"/E/workspace/explore/mines_react/mines_react_v1/README.md",
+		"/E/workspace/explore/mines_react/mines_v1/.gitignore",
+		"/E/workspace/explore/mines_react/mines_v1/package.json",
+		"/E/workspace/explore/mines_react/mines_v1/src/components/CHeader_com/index.js",
+		"/E/workspace/explore/mines_react/mines_v1/src/components/Select.js",
+		"/E/workspace/explore/mines_react/mines_v1/src/components/CItems.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"receive",
+				"hangyu-web-v2\\src\\page\\fromBox\\received.js"
+			],
+			[
+				"plan",
+				"hangyu-web-v2\\src\\page\\fromBox\\plan.js"
+			],
+			[
+				"itemdeta",
+				"hangyu-web-v2\\src\\page\\fromBox\\itemDetailForm.js"
+			],
+			[
+				"rstime",
+				"hangyu-web-v2\\src\\static\\css\\from\\rsTime.scss"
+			],
+			[
+				"capacity",
+				"hangyu-web-v2\\src\\page\\fromBox\\capacityRelease.js"
+			],
+			[
+				"index",
+				"tongle_v2\\src\\index.js"
+			],
+			[
+				"boxes",
+				"hangyu-web-v2\\src\\page\\loginAndRegister\\boxes.js"
+			],
+			[
+				"myre",
+				"hangyu-web-v2\\src\\static\\css\\from\\myReceivedScheme.scss"
+			],
+			[
+				"rss",
+				"hangyu-web-v2\\src\\static\\css\\from\\rsScheme.scss"
+			],
+			[
+				"",
+				"tongle_v2\\.babelrc"
+			],
+			[
+				"myrs",
+				"hangyu-web-v2\\src\\static\\css\\from\\myReceivedScheme.scss"
+			],
+			[
+				"roledemad",
+				"hangyu-web-v2\\src\\components\\roleDemand\\roleDemandChild.js"
+			],
+			[
+				"rece",
+				"hangyu-web-v2\\src\\static\\css\\from\\receivedScheme.scss"
+			],
+			[
+				"myrsscheme",
+				"hangyu-web-v2\\src\\static\\css\\from\\myrsScheme.scss"
+			],
+			[
+				"capacitysc",
+				"hangyu-web-v2\\src\\static\\css\\from\\capacityScheme.scss"
+			],
+			[
+				"capacit",
+				"hangyu-web-v2\\src\\page\\fromBox\\capacityScheme.js"
+			],
+			[
+				"rssc",
+				"hangyu-web-v2\\src\\static\\css\\from\\rsScheme.scss"
+			],
+			[
+				"flight",
+				"hangyu-web-v2\\src\\page\\fromBox\\flightScheme.js"
+			],
+			[
+				"box",
+				"hangyu-web-v2\\src\\page\\loginAndRegister\\boxes.js"
+			],
+			[
+				"detailtio",
+				"hangyu-web-v2\\src\\static\\css\\from\\detailTopInfo.scss"
+			],
+			[
+				"fight",
+				"hangyu-web-v2\\src\\page\\fromBox\\fightScheme.js"
+			],
+			[
+				"airport",
+				"hangyu-web-v2\\src\\page\\demandList\\airPortDemandItem.js"
+			],
+			[
+				"roledemandlis",
+				"hangyu-web-v2\\src\\components\\roleDemand\\roleDemandList.js"
+			],
+			[
+				"demandfile",
+				"hangyu-web-v2\\src\\components\\roleDemand\\demandFilter.js"
+			],
+			[
+				"nav.js",
+				"hangyu-web-v2\\src\\page\\nav\\nav.js"
+			],
+			[
+				"event",
+				"hangyu-web-v2\\node_modules\\_min-document@2.19.0@min-document\\event.js"
+			],
+			[
+				"nav.scss",
+				"hangyu-web-v2\\src\\static\\css\\nav\\nav.scss"
+			],
+			[
+				"nav",
+				"hangyu-web-v2\\src\\page\\nav\\nav.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

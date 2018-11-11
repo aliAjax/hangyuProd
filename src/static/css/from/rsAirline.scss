@@ -1,0 +1,169 @@
+/*机场收到的方案*/
+.re-scheme-con{
+	border-radius: 10px;
+	overflow: hidden;
+	.title{
+		background-color: #7c86ab;
+		height: 36px;
+		padding: 0 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fefefe;
+		>span{
+			display: flex;
+			align-items: center;
+			cursor: default;
+		}
+		>a{
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			cursor: pointer;
+			padding: 3px 16px;
+			border-radius: 50px;
+			background: #fefefe;
+			color: #4f5d8e;
+		}
+	}
+	/*路线方案*/
+	.course-info{
+		display: flex;
+		padding: 5px 10px;
+		background-color: #4e5c8e;
+		justify-content: space-between;
+		.air-point,.air-icon,.air-price{
+			display: flex;flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			
+		}
+		.air-point,.air-price{
+			>span{
+				color: #fefefe;
+				margin: 5px 0;
+				&:first-child{
+					color: #ddd;
+					font-size: 10px;
+				}
+				&:last-child{
+					font-size: 12px;
+				}
+			}
+			.light{
+				color: #ffbe54;
+			}
+		}
+		.air-icon{
+			>i{
+				width: 30px;height: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 30px;
+				color: #a6c0ff;
+			}
+		}
+		.air-price{
+			width: 100px;
+			color: #fefefe;
+			font-size: 10px;
+			align-items: center;
+			.light{
+				padding-left: 3px;
+				font-size: 13px;
+			}
+		}
+		
+	}
+	
+
+	/*出入时刻 (可抽取组件)*/ 
+	.enter-level-tiem{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0 8px;
+		>div{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			font-size: 10px;
+			color: #fefefe;
+			>span{
+				margin: 5px 0; 
+			}
+			&:first-child{
+				// padding-left: 5px;
+				>span{
+					margin-left: 5px;
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					display: flex;align-items: center;
+					justify-content: center;
+					background-color: #3e74ee;
+					color: #fefefe;
+					font-size: 10px;
+				}
+				&::before{
+					content: '';
+					width: 5px;
+					height:60%;
+					border: 2px solid #3e74ee;
+					border-right: none;
+					position: absolute;
+					left: 0px;
+				}
+			}
+			&:last-child{
+				padding-left: 5px; 
+			}
+		}
+		&::before{
+			content: '';
+			height: 80%;
+			width: 1px;
+			background-color: #5d6b9c;
+			position: absolute;
+			left: 0;
+		}
+	}/*enter-level-tiem*/
+
+	/*航线路径 (可抽取组件)*/
+	.quote{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 10px;
+		>span{
+			font-size: 10px;
+			color: #fefefe;
+			&:first-child{
+				margin: 5px 0;
+			}
+			>span{
+				>span{
+					padding: 0 6px;
+					&:last-child{
+						&:first-letter{
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+		&::before{
+			content: '';
+			height: 80%;
+			width: 1px;
+			background-color: #5d6b9c;
+			position: absolute;
+			left: 0;
+		}
+	}/*quote*/
+}

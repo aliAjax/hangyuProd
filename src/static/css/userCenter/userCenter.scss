@@ -1,0 +1,128 @@
+.userCenterBox{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index:10;
+  width:100%;
+  height:100%;
+  padding-top:65px;
+  background-color:white;
+  display: flex;
+  flex-flow: column nowrap;
+  //overflow-y: scroll;
+}
+.userCenterBox-mes{
+  height:240px;
+  background: linear-gradient(90deg, #0d3187, #ffe6cd);
+  display: flex;
+  flex-flow: column nowrap;
+  flex:0 0 240px;
+}
+.userCenterBox-mes-detail{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0 auto;
+  width: 1000px;
+  >div {
+    display: flex;
+    align-items: flex-end;
+    >div:nth-child(1) {/*图片*/
+      margin-left: 34px;
+      width: 104px;
+      height: 101px;
+      border-radius: 100%;
+      overflow: hidden;
+      background: #d7d7d7;
+      >img {
+        width: 104px;
+        height: 101px;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.userCenterBox-mes-text {
+  margin-left: 62px;
+  padding-bottom: 10px;
+  >div {
+    >span {
+      color: white;
+    }
+  }
+  >div:nth-child(1) {  /*名字*/
+    font-size: 2.4rem;
+    line-height: 34px;
+    color: white;
+  }
+  >div:nth-child(2) {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    >div:nth-child(1) {
+      margin-right: 132px;
+    }
+    >div:nth-child(2) {
+      margin-right: 204px;
+    }
+    >div:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}
+.btn-record {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  color: #3c78ff;
+}
+.userCenter-form-nav{
+  height: 64px;
+  border-top: 3px solid rgba(0,0,0,0.05);
+  box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+  >div{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    >div{
+      flex:1;
+      height: 62px;
+      line-height: 62px;
+      text-align: center;
+      border-bottom:6px solid transparent;
+      color: white;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+}
+.userCenter-form-nav-set{
+  border-bottom:6px solid #4f87ff !important;
+}
+.userCenterBox-from{
+  flex:1 1 auto;
+  background-color: #f8f8f8;
+  overflow-y: scroll;
+}
+.from-box{
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+@media screen and (max-width: 1366px) {
+  .userCenterBox{
+    position:absolute;
+    z-index:10;
+    width:100%;
+    height:100%;
+    padding-top:50px;
+    background-color:white;
+    display: flex;
+    flex-flow: column nowrap;
+    //overflow-y: scroll;
+  }
+}

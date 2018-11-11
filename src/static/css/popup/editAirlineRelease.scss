@@ -1,0 +1,609 @@
+.editAirLineRelease {
+    width: 780px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    .title {
+        height: 40px;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        color: #9a9a9a;
+        >button {
+            border: none;
+            background-color: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #4172f4;
+            cursor: pointer;
+            outline: none;
+            >i {
+                font-style: normal;
+                color: #fff;
+            }
+        }
+    }
+    .release-main {
+        background: #fff;
+        padding: 10px 15px;
+        overflow-y: auto;
+        .top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            height: 60px;
+            border-radius: 8px;
+            background: white;
+            box-sizing: border-box;
+        }
+        .site-time-con {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            margin-top: 10px;
+            >div {
+                width: 30%;
+            }
+        }
+        .flight-info {
+            display: flex;
+            .flight-info-con {
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                >.common-style {
+                    width: 32%;
+                }
+            }
+            /*
+			.flight-info-price{
+				width: 33%;
+				display: flex;
+				justify-content: center;
+				>div{
+					display: flex;
+					flex-direction: row;
+					&:first-child{
+						color: #4172f4;
+						height: 30px;
+						line-height: 30px;
+					}
+					&:last-child{
+						padding: 0 5px;
+						display: flex;
+						flex-direction: column;
+					}
+				}
+				.price-item{
+					display: flex;
+					flex-direction: row;
+					height: 30px;
+					margin-bottom:5px;
+					align-items: center;
+					>div{
+						width: 120px;
+						height: inherit;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						background: #f6f6f6;
+						>input{
+							width: 80px;
+							height: inherit;
+							border: none;
+							background: none;
+							outline: none;
+							text-indent:1rem;
+						}
+						>span{
+							display: flex;
+							flex-wrap: nowrap;
+						}
+					}
+				}
+			}*/
+        }
+        .other-info {
+            .explan {
+                padding: 20px 0;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                >div {
+                    &:first-child {
+                        width: 100px;
+                        line-height: 40px;
+                        text-indent: 1rem;
+                    }
+                    &:last-child {
+                        position: relative;
+                        flex: 1;
+                        &:after,
+                        &:before {
+                            content: '';
+                            height: 1px;
+                            width: 100%;
+                            position: absolute;
+                            top: 40px;
+                            left: 0;
+                            background-color: #dadada;
+                        }
+                        &:before {
+                            top: 80px;
+                        }
+                        >textarea {
+                            width: 100%;
+                            height: 80px;
+                            line-height: 40px;
+                            position: relative;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            resize: none;
+                        }
+                    }
+                }
+                .textarea-msg {
+                    height: 22px;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    text-align: right;
+                }
+            }
+            .contact {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .common-style {
+                    width: 30%;
+                }
+            }
+        }
+        .drop-list {
+            position: absolute;
+            top: 100%;
+            right: 0;
+        }
+        .drop-list-time {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            background: none;
+            border: none;
+            >span {
+                height: 100%;
+            }
+            >div {
+                >div {
+                    background: none;
+                    border: none;
+                }
+            }
+            >span>input {
+                height: inherit;
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+            >span>span {
+                display: none
+            }
+        }
+    }
+    /*操作按钮*/
+    .handle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        background: #fff;
+        >button {
+            background: none;
+            border: none;
+            outline: none;
+            padding: 5px 20px;
+            margin: 0 5px;
+            border-radius: 50px;
+            border: 1px solid #dadada;
+            cursor: pointer;
+        }
+        .confirm {
+            padding: 5px 40px;
+            background: #4172f4;
+            color: #fff;
+        }
+    }
+}
+
+.capacity-release-content-date {
+    margin-bottom: 19px;
+    color: #3979ff;
+    >div {
+        display: inline-block;
+        margin-left: 10px;
+        >input {
+            margin-left: 3px;
+            width: 22px;
+            height: 22px;
+            border-radius: 12px;
+        }
+    }
+}
+
+/*表单项公共样式*/
+
+.common-style {
+    height: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    >div {
+        display: flex;
+        position: relative;
+        padding: 0 5px;
+        background: #f6f6f6;
+        &:nth-child(1) {
+            width: 90px;
+            align-items: center;
+            justify-content: center;
+            >i {
+                font-style: normal;
+                font-size: 2rem;
+            }
+            &:after {
+                content: '';
+                width: 1px;
+                height: 70%;
+                background: #ddd;
+                position: absolute;
+                right: 0;
+                top: 15%;
+            }
+        }
+        &:nth-child(2) {
+            flex: 1;
+            >input {
+                width: 100%;
+                height: inherit;
+                border: none;
+                background: none;
+                outline: none;
+                text-indent: 1rem;
+            }
+            >span {
+                display: flex;
+                align-items: center;
+            }
+        }
+    } // 提示信息
+    .msg {
+        width: 150%;
+        display: flex;
+        justify-content: flex-end;
+        height: 16px;
+        padding: 0 1rem;
+        position: absolute !important;
+        top: 100%;
+        right: 0;
+        color: red;
+    }
+}
+
+/*时刻 基本样式*/
+
+.time-item {
+    margin-left: 10px;
+    >div:nth-child(1) {
+        width: 40px;
+        >span:first-child {
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 10px;
+            /*margin-right: 5px;*/
+        }
+    }
+    .bgColorBlue {
+        background-color: #4172f4;
+    }
+    .bgColorYellow {
+        background-color: #ceac30
+    }
+    .ident {
+        position: absolute;
+        left: -1.2rem;
+        width: 1.2rem;
+        word-break: break-all;
+    }
+}
+
+/*时刻 特殊样式 较小*/
+
+.small-time-item {
+    margin-bottom: 0;
+    width: 48%;
+}
+
+.common-style {
+    /*特殊样式:选择航班*/
+    /*挖了很多坑*/
+    .days {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        >div {
+            width: 100%;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            color: #000;
+            /* background: #4172f4;
+			color:#fff;*/
+            >input {
+                margin-left: 3px;
+                width: 22px;
+                height: 22px;
+                border-radius: 12px;
+            }
+        }
+    }
+    /*挖了很多坑*/
+    .date {
+        >span {
+            display: flex;
+            align-items: center;
+            >span {
+                background: none;
+                border: none;
+            }
+            >div {
+                display: flex;
+                align-items: center;
+                >input {
+                    border: none;
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+/*出入港时刻*/
+
+.time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    .time-line {
+        padding-left: 10px;
+        &:after {
+            content: '';
+            width: 8px;
+            height: 70%;
+            border: 1px solid #4172f4;
+            border-right: none;
+            position: absolute;
+            left: 0px;
+            top: 15%;
+        }
+    }
+    /*定义经停时刻框宽度和大小*/
+    .time-col {
+        position: relative;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(2) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        /*第二个去掉下边距*/
+        .time-col-items:first-child {
+            margin-bottom: 20px;
+        }
+        .time-col-items {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            >div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /*图标*/
+            .time-col-icon {
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >span {
+                    font-size: 20px;
+                }
+                &.reverse {
+                    >span {
+                        transform: rotateY(180deg);
+                        color: #ceac30;
+                    }
+                }
+            }
+            /*经停进出港时刻*/
+            .time-col-center {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+            }
+        }
+    }
+    .time-box {
+        width: 100%;
+        position: relative;
+        .time-item:first-child {
+            margin-top: 0;
+        }
+        .time-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*没有经停时刻*/
+
+.no-pst {
+    .time-col-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        margin-bottom: 20px;
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*图标*/
+        .time-col-icon {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >span {
+                font-size: 20px;
+            }
+            &.reverse {
+                >span {
+                    transform: rotateY(180deg);
+                    color: #ceac30;
+                }
+            }
+        }
+    }
+    .time-col-items:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.antd a,
+.antd span {
+    text-decoration: none;
+}
+
+/*下拉选项模块*/
+
+.capacity-release-content-box {
+    width: 245px;
+    height: 43px;
+    padding-right: 10px;
+    color: #3979ff;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    >.capacity-release-content-filter-type {
+        white-space: nowrap;
+        color: #3979ff;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-right: 2px solid #e3e3e3;
+    }
+    >label>:nth-child(1)>input {
+        width: 50px;
+        margin: 0;
+    }
+    >label>:nth-child(2)>input {
+        width: 120px;
+        margin-left: 10px;
+        padding-right: 44px;
+    }
+    >span>div>input {
+        width: 120px;
+    }
+    >span {
+        display: inline-block;
+        >input {
+            width: 120px;
+        }
+    }
+}
+
+.newStyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    >div:nth-child(1)>div {
+        color: #605e7c;
+        left: 103px
+    }
+}
+
+/*加载阴影*/
+
+.shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000, $alpha: 0.1);
+}
+
+.pay-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:1367px) {
+    .editAirLineRelease {
+        height: 651px;
+    }
+}

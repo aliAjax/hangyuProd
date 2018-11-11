@@ -1,0 +1,84 @@
+/*收藏类按钮*/
+button{
+  height: 32px;
+}
+.btn0{
+  box-sizing: border-box;
+  border-radius: 100px;
+  color: #A5A5A5;
+  font-size: 1.4rem;
+  outline: none;
+  border: 0px solid #ffffff;
+  background: #ffffff;
+  box-shadow:1px 1px 18px rgba(0,0,0,.13);
+  cursor: pointer;
+}
+.btn0:hover{
+  color:#FFFFFF;
+  background: rgba(60,120,255,0.7);
+}
+.btn0:active{
+  color:#FFFFFF;
+  background: rgba(60,120,255,0.7);
+}
+/*确认类按钮*/
+.btn1{
+  box-sizing: border-box;
+  border-radius: 100px;
+  color:#FFFFFF;
+  font-size: 1.4rem;
+  outline: none;
+  border: 0px solid #ffffff;
+  background: #3C78FF;
+  box-shadow: 1px 1px 18px rgba(60,120,255,.6);
+  cursor: pointer;
+}
+.btn1:hover{
+  color:#FFFFFF;
+  background: rgba(60,120,255,0.7);
+}
+.btn1:active{
+  color:#FFFFFF;
+  background: rgba(60,120,255,0.7);
+}
+
+/*取消类按钮*/
+.btn2{
+  box-sizing: border-box;
+  border-radius: 100px;
+  color: #A5A5A5;
+  font-size: 1.4rem;
+  outline: none;
+  border: 1px solid rgba(96,94,124,0.6);
+  background: #ffffff;
+  opacity: 0.4;
+}
+.btn2:hover{
+  color: #605e7c;
+  background: rgba(96,94,124,0.2);
+  border: 0px solid rgba(96,94,124,0.6);
+}
+.btn2:active{
+  color: #605e7c;
+  background: rgba(96,94,124,0.4);
+  border: 0px solid rgba(96,94,124,0.6);
+}
+
+/*禁点类按钮*/
+.disable{
+  color: #a5a5a5;
+  font-size: 1.4rem;
+  border: 0px solid rgba(96,94,124,0.6);
+  background-color: rgba(203, 203, 203, 0.98);
+  box-shadow: 1px 2px 6px 0px
+  rgba(191, 191, 191, 0.61);
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.disable:hover{
+  cursor: not-allowed;
+}
+.disable:active{
+  cursor: not-allowed;
+}

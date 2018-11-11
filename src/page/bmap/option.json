@@ -1,0 +1,66 @@
+{
+  "bmap": {
+    "center": ["110.47", "50"],
+    "zoom": 6,
+    "color": "red",
+    "roam": "true",
+    "type": "bmap",
+    "mapStyle": {
+      "styleJson": [
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": {
+            "color": "#bec8e1",
+            "visibility": "on"
+          }
+        },
+        {
+          "featureType": "land",
+          "elementType": "all",
+          "stylers": {
+            "color": "#ededed",
+            "visibility": "on"
+          }
+        },
+        {
+          "featureType": "boundary",
+          "elementType": "all",
+          "stylers": {
+            "color": "#bfbfbf",
+            "visibility": "on"
+          }
+        },
+        {
+          "featureType": "arterial",
+          "elementType": "all",
+          "stylers": {
+            "visibility": "off"
+          }
+        },
+        {
+          "featureType": "highway",
+          "elementType": "all",
+          "stylers": {
+            "visibility": "off"
+          }
+        },
+        {
+          "featureType": "label",
+          "elementType": "all",
+          "stylers": {
+            "visibility": "off"
+          }
+        }]
+    }
+  },
+  "legend": {
+    "show":"false"
+  },
+  "tooltip": {
+    "formatter":"{b}"
+  },
+  "series": [
+
+  ]
+}

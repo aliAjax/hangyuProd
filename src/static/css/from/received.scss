@@ -1,0 +1,203 @@
+.received-scheme{
+	height: 100%;
+	padding: 0px 10px;
+	display: flex;
+	flex-direction: column;
+	// 数据项容器样式
+	.rs-con{
+      font-size: 1.2rem;
+		flex:1;
+	}
+	.rs-scheme{
+		margin: 10px;
+		padding: 10px;
+		background-color: #f2f2f2;
+		border-radius: 10px;
+	}
+}
+/*需要排序的项*/
+.sort-item{
+    width:20px;
+    display: flex;
+    flex-direction: column;
+    >button{
+        width: 20px;
+        height: 10px;
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:first-child{
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+        }
+        &.active{
+            >i{
+                color:#4077FC;
+            }
+        }
+        >i{
+            display: block;
+            height: inherit;
+            width: 20px;
+            line-height: 10px;
+            color: #999999;
+        }
+    }
+}
+
+// 项样式
+.rs-item{
+	position: relative;
+	padding: 5px 0;
+	// height: 40px;
+	display: flex;
+	flex-direction: row;
+	font-size: inherit;
+	border-bottom: 1px solid #dddddd;
+	color: #333;
+	>div{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 5px 10px;
+		color:inherit;
+        >span{
+        	position: relative;
+			max-width: 120px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+        	>i{
+        		display: flex;
+        		justify-content: center;
+        		align-items: center;
+        		position: relative;
+        		font-size: 24px;
+        		width: 20px;height: 20px;
+        	}
+
+        	&.active{
+        		>i{
+					&::before{
+	        			content: '';
+	        			width:6px;
+	        			height: 6px;
+	        			background: red;
+	        			position: absolute;
+	        			z-index: 1;
+	        			right: 0;top: 0;
+	        			border-radius: 100%;
+	        		}
+        		}
+	        		
+        	}
+        }
+        /*最后一个div 包含一个下拉箭头*/
+        &:first-child{
+        	>span{
+        		>i{
+        			font-size: 18px;
+	    		}
+        	}
+    	}
+        
+	}
+	&.mine{
+		color:#4077FC;
+	}
+}
+
+/*按钮*/
+.user-operation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	>button{
+		height:28px;
+		font-size: 12px;
+		padding: 3px 20px;
+		margin: 5px 5px;
+		background: none;
+		border: none;
+		outline: none;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		>i{
+			font-size: 20px;
+			width: 20px;height: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+	}
+	.btn-blue-plus{
+		padding: 3px 50px;
+		background: #4077FC;
+		color: #fefefe;
+	}
+	.btn-blue{
+		background: #4077FC;
+		color: #fefefe;
+	}
+	.btn-gray{
+		background: none;
+		border: 1px solid #a0a0a0;
+		color: #a0a0a0;
+	}
+}
+.common-item{
+	>div{
+		&:nth-child(1){flex: 2;}
+        &:nth-child(2){flex: 2;}
+        &:nth-child(3){flex: 3;}
+        &:nth-child(4){flex: 3;}
+	}
+	.tip-icon{
+		position: absolute;
+		right: 0;
+		top: -10px;
+		font-size: 30px;
+		// color: yellow;
+	}
+}
+/*机场/航司-市场-他收到的方案header*/
+.market-common-item{
+	>div{
+		&:nth-child(1){flex: 2;}
+        &:nth-child(2){flex: 2;}
+        &:nth-child(3){flex: 3;}
+        &:nth-child(4){flex: 3;}
+	}
+}
+/*机场-市场-收到的方案header*/
+.airport-market-rs-item{
+	@extend .market-common-item;
+}
+/*机场-我的-收到的方案header*/
+.airport-demand-rs-item{
+	>div{
+		&:nth-child(1){flex: 2;}
+        &:nth-child(2){flex: 2;}   
+        &:nth-child(3){flex: 4;}
+        &:nth-child(4){flex: 2;}
+	}
+}
+/*航司-市场-收到的方案header*/
+.airline-market-rs-item{
+	@extend .market-common-item;
+}
+/*航司-我的-收到的方案header*/
+.airline-demand-rs-item{
+	@extend .market-common-item;
+}

@@ -1,0 +1,56 @@
+/*顶部信息*/
+.detail-top-info{
+  font-size: 1.2rem;
+	height: 38px;
+	display: flex;
+	flex-direction: row;
+	color: #fefefe;
+	>.detail-top-info-item{
+		padding: 0 5px;
+		display: flex;
+		flex:1;
+		flex-direction: inherit;
+		justify-content: space-around;
+		color: inherit;
+		>div{
+			>i{
+				font-size: 30px;
+			}
+			display: flex;
+			flex-direction: inherit;
+			flex-wrap: nowrap;
+			align-items: center;
+			color: inherit;
+
+			>span{
+				padding: 0 4px;
+				white-space: nowrap;
+				display: flex;
+			}
+		}
+		.close-btn{
+			>i{
+				display: flex;
+				font-size: 20px;
+				width: 20px;height: 20px;
+				background: #fefefe;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				color:#111111;
+				cursor: pointer;
+			}
+		}
+		&:nth-child(2){
+			>div{
+				>span{
+					&:last-child{
+						font-size: 2rem;
+						font-weight: bold;
+						color: #f58d1a;
+					}
+				}
+			}
+		}
+	}
+}

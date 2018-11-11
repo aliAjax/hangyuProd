@@ -1,0 +1,449 @@
+
+
+.demand-box{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 450px;
+  height: 100%;
+  background: white;
+  z-index: 10;
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.08);
+}
+.demand-list-padding{
+  padding: 17px 12px;
+}
+.demand-item{
+  height:128px;
+  background: white;
+  border-bottom: #f9f9f9 solid 2px;
+  cursor: pointer;
+}
+.demand-item-head{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 36px;
+  //position: relative;
+}
+.demand-item-mes{
+  display: flex;
+  flex-flow: row;
+  >div{
+    width: 85px;
+    margin-left: 15px;
+    flex: 1;
+    >div:nth-child(1){
+      color: #a1a0b1;
+      padding-bottom: 10px;
+    }
+    >div:nth-child(2){
+      color: #6a6984;
+    }
+  }
+}
+.demand-item-tag-box{
+  display: flex;
+  flex-flow: row nowrap;
+  //transform: translateY(-5px);
+  >li{
+    cursor: pointer;
+  }
+}
+.demand-item-tag-box-item0{
+  display: flex;
+  align-items: center;
+  //padding: 0 3px;
+  position:relative ;
+}
+.demand-item-tag-box-item1{
+   display: flex;
+   align-items: center;
+  border-left:1px solid #dfdfdf ;
+  margin-left: 25px;
+  position:relative ;
+ }
+.demand-item-tag{
+  color: #4a79f8;
+  font-size: 1.5rem;
+}
+.font{
+  font-size: 1.4rem;
+  margin-left: 6px;
+}
+
+.demand-item-head-tag{
+  color: #f98933;
+  font-size: 2rem;
+  transform: translateY(-2px);
+  position: absolute;
+  top: -2px;
+  left: -3px;
+}
+.demand-item-head-title{
+  width: 270px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #6a6984;
+  margin-left: 5px;
+}
+.demand-item-head-title-box{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+/*  切换需求列表的title */
+.demand-list-head{
+  float:left;
+  height:55px;
+  background-color:#f5f8fe;
+  line-height:55px;
+  width:50%;
+  text-align:center;
+  font-size:1.4rem;
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  cursor: pointer;
+}
+
+/* 筛选模块 */
+.demand-screen-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  background-color: #f5f8ff;
+  .screen-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5px;
+    width: 80px;
+    cursor: pointer;
+    >span {
+      font-size: 2rem;
+    }
+  }
+}
+.match-box{
+  height:60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 25px;
+  align-items: center;
+  background-color: #f5f8ff;
+  font-size: 1.2rem;
+}
+.match-num{
+  //line-height: 60px;
+  font-weight: bold;
+}
+
+.demand-list-filter{
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 2px solid #f9f9f9;
+  height: 60px;
+  >div{
+    margin-right: 30px;
+    display: flex;
+  }
+}
+.demand-list-filter:hover{
+  cursor: pointer;
+}
+
+/*鼠标移入提示模块*/
+.demand-item-tag-box-hover,.demand-item-tag-box-hover1{
+  display: none;
+  white-space: nowrap;
+  padding:8px 15px ;
+  border-radius: 7px;
+  position: absolute;
+  top: 26px;
+  left: -90px;
+  background-color: #f5f8fd;
+  box-shadow: 0px 6px 13px 0px rgba(132, 132, 132, 0.16);
+  z-index: 999;
+}
+
+.demand-item-tag-box-hover1{
+  left:-70px
+}
+
+.demand-item-tag-box-need{
+  font-size: 1.2rem;
+  display: none;
+  white-space: nowrap;
+  padding:8px 15px ;
+  border-radius: 7px;
+  position: absolute;
+  top: 26px;
+  left: 14px;
+  background-color: #f5f8fd;
+  box-shadow: 0px 6px 13px 0px rgba(132, 132, 132, 0.16);
+  z-index: 999;
+}
+.demand-item-tag-box-item0:hover .demand-item-tag-box-hover{
+  display: block;
+}
+.demand-item-tag-box-item1:hover .demand-item-tag-box-hover1{
+  display: block;
+}
+.demand-item-head-tag:hover .demand-item-tag-box-need{
+  display: block;
+}
+
+
+/*绘制三角形模块*/
+.demand-list-triangle{
+  position: relative;
+  top: -1px;
+  margin-left: 6px;
+}
+
+.demand-list-top-triangle0{
+  width: 0;
+  height: 0;
+  margin-bottom: 2px;
+  border-bottom: 5px solid #2c4e9d;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.demand-list-bottom-triangle0{
+  width: 0;
+  height: 0;
+  border-top: 5px solid #949494;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.demand-list-top-triangle1{
+  width: 0;
+  height: 0;
+  margin-bottom: 2px;
+  border-bottom: 5px solid #949494;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.demand-list-bottom-triangle1{
+  width: 0;
+  height: 0;
+  border-top: 5px solid #2c4e9d;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+/*绘制出进线条模块*/
+.demand-time{
+  display: flex;
+  align-items: center;
+}
+
+.demand-out-in{
+  width:7px;
+  height:45px;
+  padding: 0;
+  border:1px solid #8699C7;
+  border-right:1px solid #ffffff ;
+  padding: 0;
+}
+
+.demand-time-style{
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  >div>span{
+    white-space: nowrap;
+    font-size: 1.4rem;
+  }
+}
+
+.demand-time-style-font{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  background-color: #0E348F;
+  border-radius: 10px;
+}
+/*下划线样式模块*/
+.demand-filter-style{
+  //border-bottom: 2px solid #4c7ffb;
+  padding-bottom: 32px;
+}
+
+.demand-market-loading{
+  color: #0E348F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  width: 435px;
+  height: 40px;
+  background-color: darkgray ;
+  opacity: 0.8;
+}
+
+.demand-market{
+  position:relative;
+  flex: 1 1;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.2rem;
+  >span{
+    margin: auto;
+    margin-top: 20px;
+    color: #605e7c;
+  }
+}
+
+.demand-market-lazy{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 650px;
+}
+.hidden{
+  display: none;
+}
+/*加载更多按钮*/
+.get-more-data{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 28px;
+  background-color: transparent;
+  bottom:10px;
+  >button{
+    width: 140px;
+  }
+}
+/*流程指引*/
+.reForm{
+  color:#3c78ff;
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+  .reference{
+    width: 69px !important;
+    margin-right: 0px !important;
+  }
+  .demand-filter-style{
+    padding-bottom: 0px;
+    height: 23px;
+  }
+  .demand-list-filter{
+    //height: unset;
+    height: 56px;
+  }
+  .demand-list-padding{
+    //padding: 10px 12px;
+    //padding-bottom: 19px;
+  }
+  .demand-item-head-title{
+    width: unset;
+    font-size: 12px;
+  }
+  .demand-item-head-title-box{
+
+  }
+  .demand-item-tag-box{
+    >li>span{
+      font-size: 1.2rem;
+    }
+  }
+  .demand-item-head{
+    padding-right: 12px;
+  }
+  .demand-item-head-tag{
+    top:-5px;
+  }
+  .demand-item-mes{
+    >div{
+      width: 54px;
+      >div:nth-child(1){
+        white-space: nowrap;
+      }
+      >div:nth-child(2){
+        word-wrap: break-word;
+      }
+    }
+  }
+  .demand-market-lazy{
+    //height: 362px;
+    .demand-list-padding{
+      padding-top: 15px;
+    }
+  }
+  .demand-item{
+    height: 134px;
+  }
+  .demand-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background: white;
+    z-index: 10;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.08);
+  }
+  .match-box{
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 8px;
+    align-items: center;
+    background-color: #f5f8ff;
+    font-size: 1.2rem;
+  }
+  .demand-list-head{
+    float:left;
+    height:45px;
+    background-color:#f5f8fe;
+    line-height:45px;
+    width:50%;
+    text-align:center;
+    font-size:1.4rem;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    cursor: pointer;
+  }
+  .demand-time-style>div>span{
+    font-size: 1.2rem;
+  }
+  .demand-time-style-font{
+    width: 14px;
+    height: 14px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .demand-market-lazy{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 370px;
+  }
+}

@@ -1,0 +1,100 @@
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*覆盖 .ant-checkbox-wrapper字体大小和颜色*/
+.cover-ant-checkbox-wrapper{
+    font-size: 12px;
+}
+.cover-ant-checkbox-wrapper >span:nth-child(2){
+    color: #605e7c;
+    font-weight: bold;
+}
+/* 覆盖 .ant-select-arrow 的默认图标 */
+.ant-select-arrow:before{
+    content:"\e605";
+    font-size: 18px;
+    color: #3a78ff;
+    font-family: iconfont !important;
+}
+.ant-tabs{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ant-tabs-content{
+    flex: 1; 
+}
+/* 覆盖折叠面板默认样式 */
+.ant-collapse-header{
+	padding: 5px 0 !important;
+	border: none;
+}
+.ant-collapse-borderless{
+	background: transparent !important;
+}
+.ant-collapse-content{
+    padding: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ant-steps-item-title:after {
+    top: -10px !important;
+    left: 33px !important;
+}
+.ant-steps-item-content {
+     display: block;
+}
+.ant-input-cover{
+    border-radius: 40px;
+}
+.cover-ant-select-selection{
+    width: 100%;
+    height: 38px;
+}
+.cover-ant-select-selection .ant-select-selection,.ant-select-selection__rendered{
+    height: 38px;
+}
+.cover-ant-select-selection .ant-select-selection{
+    border-radius: 20px;
+}
+/*.cover-ant-select-selection .ant-select-arrow:before{*/
+    /*content: "\E605";*/
+    /*font-size: 18px;*/
+    /*color: #3a78ff;*/
+    /*font-family: iconfont !important;*/
+    /*transform: translateY(-5px);*/
+/*}*/
+.cover-ant-select-selection .ant-select-selection-selected-value{
+    height: 38px;
+    line-height: 38px;
+}
+
+.ant-time-picker-input{
+    outline: none;
+    border:none;
+}
+.ant-steps-small .ant-steps-item-icon {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.ant-steps-small .ant-steps-item-title {
+    font-size: 12px;
+}
+.ant-calendar-picker-icon {
+    display: none;
+}
+.ant-calendar-picker-clear {
+    display: none;
+}
+/*日历背景颜色*/
+.ant-calendar-selected-day>div[aria-disabled='false']{
+    background: #3C78FF !important;
+}
+.ant-calendar-month-panel-selected-cell>.ant-calendar-month-panel-month{
+    background: #3C78FF;
+}
+

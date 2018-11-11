@@ -1,0 +1,122 @@
+/*计划方案*/
+.mrs-scheme-con{
+			border-radius: 10px;
+			overflow: hidden;
+			.title{
+				background-color: #7c86ab;
+				height: 36px;
+				padding: 0 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: #fefefe;
+				>span{
+					display: flex;
+					align-items: center;
+					&:last-child{
+						padding: 2px 10px;
+						border-radius: 50px;
+						background: #fefefe;
+						color: #4f5d8e;
+						cursor: pointer;
+					}
+				}
+			}
+
+		}
+
+.capacity-detail{
+	// display: none !important;
+	height: 130px;
+	padding: 10px 20px;
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	.wireframe{
+		height: 70%;width: 15px;
+		border:1px solid #DDDDDD;
+		border-right: none;
+		position: relative;
+		display: flex;
+		align-items: center;
+		.circle{
+			height: 30px;width: 30px;border-radius: 50%;
+			background-color: #fefefe;
+			position: absolute;
+			left: -15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			color: blue;
+		}
+	}
+	.level-or-enter-time{
+		height: 100%;
+		flex:3;
+		display: flex;
+		flex-direction: column;
+		color: #fff;
+		justify-content: space-between;
+		>div{
+			height: 50px;
+			padding:0 8px;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			>span{
+				&:first-child{
+					color: #eee;
+					font-size: 10px;
+					letter-spacing: 1px;
+				}
+				&:last-child{
+					font-size: 16px;
+					font-weight: bold;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+	.quoted{
+		height:100%;
+		flex:4;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		>div{
+			color: #eee;
+			height: 50px;
+			>span{
+				color: #eee;
+				font-size: 10px;
+				letter-spacing: 1px;
+			}
+			>div{
+				display: flex;
+				flex-direction: row;
+				color: inherit;
+				>span{
+					margin-right: 10px;
+					>span{
+						padding: 0 3px;
+						font-size: 16px;
+						color: #ffbe54;
+					}
+				}
+			}
+		}
+	}
+	.schedule{
+		flex:1;
+		height: 100%;
+		>div{
+			display: flex;
+			flex-direction: column;
+			color: #eee;
+			height: 50px;
+
+		}
+	}
+}

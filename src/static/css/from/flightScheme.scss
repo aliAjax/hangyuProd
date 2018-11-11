@@ -1,0 +1,73 @@
+/*航线方案*/
+.flight-course{
+	// display: flex;
+	flex-direction: column;
+	padding: 0px 10px 4px 10px;
+	.flight-course-item{
+		font-size: 10px;
+		border-radius: 10px;
+		overflow: hidden;
+		.title{
+			background-color: #7c86ab;
+			height: 30px;
+			padding: 0 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #fefefe;
+			>span{
+				display: flex;
+				align-items: center;
+			}
+		}
+		.course-info{
+			display: flex;
+			padding: 5px 10px;
+			background-color: #4e5c8e;
+			justify-content: space-between;
+			.air-point,.air-icon,.air-price{
+				display: flex;flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				
+			}
+			.air-point,.air-price{
+				>span{
+					color: #fefefe;
+					margin: 5px 0;
+					&:first-child{
+						color: #ddd;
+						font-size: 10px;
+					}
+					&:last-child{
+						font-size: 12px;
+					}
+				}
+				.light{
+					color: #ffbe54;
+				}
+			}
+			.air-icon{
+				>i{
+					width: 30px;height: 30px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 30px;
+					color: #a6c0ff;
+				}
+			}
+			.air-price{
+				width: 100px;
+				color: #fefefe;
+				font-size: 10px;
+				align-items: center;
+				.light{
+					padding-left: 3px;
+					font-size: 13px;
+				}
+			}
+			
+		}
+	}
+}

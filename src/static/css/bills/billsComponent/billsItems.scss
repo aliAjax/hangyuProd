@@ -1,0 +1,46 @@
+.box{
+  width: 999px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  >div{
+    white-space: nowrap;
+    height: 16px;
+  }
+}
+.time{
+  margin-left: 36px;
+  width: 125px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #605e7c;
+}
+.type{
+  width: 154px;
+}
+.title{
+  width: 199px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  >span{
+    color: #5086ff;
+    text-decoration: underline;
+    display: block;
+    max-width: 150px;
+    white-space: initial;
+  }
+}
+.pay{
+  width: 151px;
+}
+.state{
+  width: 242px;
+}
+.box:hover{
+  background: #e9e9e9;
+}

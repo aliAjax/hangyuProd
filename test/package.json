@@ -1,0 +1,28 @@
+"eslintConfig": {
+"parser": "babel-eslint",
+"extends": [
+"plugin:flowtype/recommended",
+"plugin:jsx-a11y/recommended"
+],
+"plugins": [
+"flowtype",
+"jsx-a11y"
+]
+}
+
+
+{
+loaders: [
+'style-loader',
+],
+},
+{
+  cityCoordinateJ:"113.1835", // 经度
+  cityCoordinateW:"23.2332", // 维度
+  dpt:"CAN",  // 三字码
+  num:3,    // 市场需求
+  newInfo:true,
+  myNum:6,   // 我的发布
+  international: true,  // 是否国际航线,true -有国际航线，false-无国际航线
+  internationalNum:2,   // 国际航线数量
+}

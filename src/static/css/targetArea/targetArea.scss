@@ -1,0 +1,23 @@
+.indexBox{
+  min-width: 245px;
+  height:40px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.indexBox:hover{
+  background-color:#F5F5F5;
+}
+
+.noShow{
+  display: none;
+}
+.last{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
+}

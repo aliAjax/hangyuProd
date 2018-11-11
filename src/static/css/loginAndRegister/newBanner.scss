@@ -1,0 +1,143 @@
+.yw {
+  font-family: 'yw';
+}
+.banner-panel {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  transition: top .8s linear;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.banner-001 {
+  width: 1000px;
+  height: 20px;
+  position: fixed;
+  left: 3%;
+  top: 94%;
+  display: flex;
+  flex-flow: row nowrap;
+  z-index: 3;
+  > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #535353;
+    padding-bottom: 9px;
+    margin-right: 28px;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #535353;
+  }
+}
+.banner-002 {
+  width: 270px;
+  height: 20px;
+  position: fixed;
+  right: 3%;
+  top: 94%;
+  z-index: 3;
+  display: flex;
+  flex-flow: row nowrap;
+  > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #535353;
+    padding-bottom: 9px;
+    margin-right: 28px;
+  }
+  p {
+    //text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #535353;
+    color: #535353;
+  }
+
+
+}
+.banner-01 {
+  position: fixed;
+  top: 3%;
+  left: 55px;
+  z-index: 5;
+}
+.banner-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner-e1 {
+  width: 660px;
+  height: 260px;
+  position: absolute;
+  top: 35%;
+  right: 7%;
+  display: flex;
+  flex-flow: column nowrap;
+  > h5 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #494949;
+  }
+  > h3 {
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+    color: #919191;
+  }
+  > h4 {
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    color: #676566;
+  }
+  p {
+    font-size: 1rem;
+    color: #a5a4a2;
+  }
+}
+.yuna{
+  position: absolute;
+  bottom: 0;
+}
+.contact-item{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-top: 88px;
+  span{
+    font-size: 1.5rem;
+    color: #4466fb;
+    font-family: 'yw';
+    font-weight: 800;
+  }
+  p{
+    padding-top: 5px;
+    font-size: 1.4rem;
+    color: #494949;
+  }
+}
+.text1{
+  position: absolute;
+  top: 29%;
+  left: 16%;
+}
+.text2{
+  z-index: 3;
+  bottom: 33px;
+  right: 22%;
+  width: 400px;
+  height: 67px;
+  margin-top: 179px;
+}
+.newAir{
+  position: absolute;
+  width: 57.89%;
+  top: 10.5%;
+}

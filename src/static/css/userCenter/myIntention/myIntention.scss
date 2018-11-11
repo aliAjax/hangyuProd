@@ -1,0 +1,148 @@
+li{
+  margin: 0;
+  padding: 0;
+}
+/*导航栏*/
+.my-intention-nav{
+  display: flex;
+  padding-top: 55px;
+  margin-bottom: 21px;
+  color: #605e7c;;
+  align-items: center;
+}
+
+.my-intention-nav>div:nth-child(1){
+  height: 22px;
+}
+
+.my-intention-nav-demand{
+  margin-left: 136px;
+}
+
+.my-intention-nav-send{
+  margin-left: 270px;
+  >a{
+    color: #605e7c;
+    font-size: 1.2rem;
+  }
+}
+
+/*列表模块*/
+.my-intention-nav-item{
+  background-color: #ffffff;
+  width: 1000px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  &:hover{
+    background: #e9e9e9;
+  }
+}
+.my-intention-nav-item-date{
+  width: 74px;
+  margin-left: 36px;
+}
+.my-intention-nav-item-tittle{
+  color: #4f7be5;
+  margin-left: 136px;
+  width: 313px;
+  >span{
+    text-decoration: underline;
+  }
+}
+.my-intention-nav-item-state{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 345px;
+}
+
+.my-intention-nav-item-hover-div{
+  position: relative;
+  :nth-child(1){
+    font-size: 3rem;
+  }
+}
+
+.my-intention-nav-item-hover-div:hover{
+  color: #3979ff;
+  :nth-child(2){
+    display: block;
+  }
+}
+
+.my-intention-nav-item-hover{
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  top:-2px;
+  left: 30px;
+}
+
+.my-intention-content:hover{
+  //height: 500px;
+  cursor: pointer;
+}
+
+/*详情显示模块*/
+.my-intention-details{
+  background-color:rgba(255,255,255,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 947px;
+  z-index:13;
+}
+/*分页模块*/
+.my-intention-page-true{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.my-intention-text-false{
+  display: none;
+}
+
+.my-intention-text-true{
+  color: #939298;
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+}
+
+.my-intention-page-false{
+  display: none;
+}
+/*洽谈框*/
+.chatItem{
+  width: 151px;
+  background: red;
+  position: absolute;
+  top: 19px;
+  left: 88px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 11px 0px
+  rgba(85, 85, 85, 0.11);
+  border-radius: 5px;
+  z-index: 444;
+  >div{
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  >div:hover{
+    background-color: #ebebeb;
+    opacity: 0.5;
+  }
+}
+.noShow{
+  display: none;
+}
